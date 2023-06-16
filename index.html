@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>訂單 | 長益囍餅ERP</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.2.0/remixicon.css"
+      integrity="sha512-eRbcr5kt0vg2Kgl5BBKIqXoZ0f1lpe4ImM8GyzJN7mrhUR57xPh2JX+5Ra8zlh5QZWxEVQW9MOfMaCEEjnMcMA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+
+
+    <div class="home">
+      <div class="home__container">
+        <div class="home__container__row" id="row">
+
+          <div class="home__container__row__col1 column1">
+            <div class="home__container__row__col1__wrapper wrapper">
+              
+              <div class="hamburger" id="hamburger">
+                <i class="ri-menu-line hamburger-icon"></i>
+              </div>
+
+              <div class="links">
+                <div class="link">
+                  <h6>訂單作業</h6>
+                  <a href="/index.html" class="active"><i class="ri-book-3-line"></i><span class="link-text">訂單</span></a>
+                  <a href="/daily-report.html"><i class="ri-bar-chart-fill"></i><span><span class="label1">當日製作品項統計</span><span class="label2">當日統計</span></span></a>
+                </div>
+
+                <div class="link">
+                  <h6>基本資料</h6>
+                  <a href="/customer.html"><i class="ri-account-circle-line"></i><span class="link-text">客戶資料</span></a>
+                  <a href="/product.html"><i class="ri-archive-line"></i><span>品項資料</span></a>
+                  <a href="/price-history.html"><i class="ri-price-tag-3-line"></i><span>調價紀錄</span></a>
+                </div>
+
+                <div class="link no-border">
+                  <div class="setting"><a href="/user.html"><i class="ri-settings-3-line"></i><span>使用者管理</span></a></div>
+                  <h6 class="hide-on-small">系統設定</h6>
+                  <a href="/group.html" class="hide-on-small"><i class="ri-group-line"></i><span class="link-text">群組管理</span></a>
+                  <a href="/user.html" class="hide-on-small"><i class="ri-settings-3-line"></i><span>使用者管理</span></a>
+                  <a href="/change-password.html" class="hide-on-small"><i class="ri-lock-line"></i><span>修改密碼</span></a>
+                  <a href="/data-backup.html" class="hide-on-small"><i class="ri-database-2-line"></i><span>資料備份</span></a>
+                </div>
+
+                <div class="no-border sign-out">
+                  <a href="/login.html"><i class="ri-login-box-line"></i><span class="link-text">登出</span></a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="home__container__row__col2 column2">
+            <div class="home__container__row__col2__wrapper">
+              <div class="home__container__row__col2__wrapper__top-bar">
+                <h5 class="title">訂單</h5>
+                <div class="search"><input type="text" placeholder="搜尋統一編號或客戶名稱"><i class="ri-search-line"></i></div>
+              </div>
+              <div class="home__container__row__col2__wrapper__main">
+                
+                <div class="btns-wrapper">
+                  <div class="button1">
+                    <button class="btn"><i class="ri-add-line"></i><span>新增訂單</span></button>
+                  </div>
+
+                </div>
+                <div class="table">
+                  <table>
+
+                    <tr>
+                      <th>訂單編號</th>
+                      <th>訂購日期</th>
+                      <th>客戶名稱</th>
+                      <th>客戶等級</th>
+                      <th>列印訂單</th>
+                      <th>列印銷貨單</th>
+                      <th>列印請款單</th>
+                      <th>列印郵寄標籤</th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+
+                    <tr>
+                      <td>20230222-066</td>
+                      <td>110/05/01</td>
+                      <td>喜來登飯店</td>
+                      <td>1</td>
+                      <td><i class="ri-printer-line print"></i></td>
+                      <td><i class="ri-printer-line print"></i></td>
+                      <td><i class="ri-printer-line print"></i></td>
+                      <td><i class="ri-printer-line print"></i></td>
+                      <td><i class="ri-pencil-line" onclick="editBtn()"></i></td>
+                      <td><i class="ri-delete-bin-5-line" onclick="delBtn()"></i></td>
+                    </tr>
+                    <tr>
+                      <td>20230222-066</td>
+                      <td>110/05/01</td>
+                      <td>喜來登飯店</td>
+                      <td>1</td>
+                      <td><i class="ri-printer-line print"></i></td>
+                      <td><i class="ri-printer-line print"></i></td>
+                      <td><i class="ri-printer-line print"></i></td>
+                      <td><i class="ri-printer-line print"></i></td>
+                      <td><i class="ri-pencil-line" onclick="editBtn()"></i></td>
+                      <td><i class="ri-delete-bin-5-line" onclick="delBtn()"></i></td>
+                    </tr>
+                    <tr>
+                      <td>20230222-066</td>
+                      <td>110/05/01</td>
+                      <td>喜來登飯店</td>
+                      <td>1</td>
+                      <td><i class="ri-printer-line print"></i></td>
+                      <td><i class="ri-printer-line print"></i></td>
+                      <td><i class="ri-printer-line print"></i></td>
+                      <td><i class="ri-printer-line print"></i></td>
+                      <td><i class="ri-pencil-line" onclick="editBtn()"></i></td>
+                      <td><i class="ri-delete-bin-5-line" onclick="delBtn()"></i></td>
+                    </tr>
+                    <tr>
+                      <td>20230222-066</td>
+                      <td>110/05/01</td>
+                      <td>喜來登飯店</td>
+                      <td>1</td>
+                      <td><i class="ri-printer-line print"></i></td>
+                      <td><i class="ri-printer-line print"></i></td>
+                      <td><i class="ri-printer-line print"></i></td>
+                      <td><i class="ri-printer-line print"></i></td>
+                      <td><i class="ri-pencil-line" onclick="editBtn()"></i></td>
+                      <td><i class="ri-delete-bin-5-line" onclick="delBtn()"></i></td>
+                    </tr>
+                    <tr>
+                      <td>20230222-066</td>
+                      <td>110/05/01</td>
+                      <td>喜來登飯店</td>
+                      <td>1</td>
+                      <td><i class="ri-printer-line print"></i></td>
+                      <td><i class="ri-printer-line print"></i></td>
+                      <td><i class="ri-printer-line print"></i></td>
+                      <td><i class="ri-printer-line print"></i></td>
+                      <td><i class="ri-pencil-line" onclick="editBtn()"></i></td>
+                      <td><i class="ri-delete-bin-5-line" onclick="delBtn()"></i></td>
+                    </tr>
+                    <tr>
+                      <td>20230222-066</td>
+                      <td>110/05/01</td>
+                      <td>喜來登飯店</td>
+                      <td>1</td>
+                      <td><i class="ri-printer-line print"></i></td>
+                      <td><i class="ri-printer-line print"></i></td>
+                      <td><i class="ri-printer-line print"></i></td>
+                      <td><i class="ri-printer-line print"></i></td>
+                      <td><i class="ri-pencil-line" onclick="editBtn()"></i></td>
+                      <td><i class="ri-delete-bin-5-line" onclick="delBtn()"></i></td>
+                    </tr>
+                    
+                  </table>
+
+                </div>
+                
+              </div>
+
+            </div>
+          
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Javascript Code Starts form Here -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js"
+      integrity="sha512-6DC1eE3AWg1bgitkoaRM1lhY98PxbMIbhgYCGV107aZlyzzvaWCW1nJW2vDuYQm06hXrW0As6OGKcIaAVWnHJw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.9.2/sass.min.js"
+      integrity="sha512-mA5b7w9mZvGLWgjIqp9KhWNzkkZ/H3gC4Ua6GOn9m/xl1UF4ghH8GsriKvAYxLsxoKvn6NdebW7kZ6iGB3CGSg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.9.2/sass.js"
+      integrity="sha512-qN7eI/gyKBObAOLw/VOd8eDV4eR/Mp9gebkx0IqCpV5p7LYz0RCQHJahUwR+UB5W+BaphKRDz3eeqL11mGgIrQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+
+
+    <!-- Hamburger Menu -->
+    <script>
+      const navBtn = document.getElementById("hamburger")
+      const mainRow = document.getElementById("row")
+
+      navBtn.addEventListener('click', ()=>{
+        mainRow.classList.toggle("hamburger-click")
+      })
+
+    </script>
+
+
+
+    <!-- Edit Modal -->
+    <div
+      class="modal fade"
+      id="modalEdit"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-md modal-lg modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title" id="exampleModalLabel">
+              新增訂單 20230222-066
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-edit-wrapper">
+
+              <form class="form">
+
+                <div class="left">
+                  <div class="first">
+                    <fieldset>
+                      <legend>客戶名稱</legend>
+                      <select name="" id="">
+                        <option value="">喜年來大飯店a</option>
+                      </select>
+                    </fieldset>
+                    <fieldset>
+                      <legend>統一編號</legend>
+                      <input type="text">
+                    </fieldset>
+                    <fieldset>
+                      <legend>客戶等級</legend>
+                      <select name="" id="">
+                        <option value="">1</option>
+                      </select>
+                    </fieldset>
+                  </div>
+
+                  <div class="second">
+                    <fieldset>
+                      <legend>發票地址</legend>
+                      <input type="text" placeholder="臺北市內湖區洲子街12號2樓 (台北創新發展中心)">
+                    </fieldset>
+                    <fieldset>
+                      <legend>郵遞區號（自動）</legend>
+                      <input type="text">
+                    </fieldset>
+                  </div>
+
+                  <div class="third">
+                    <fieldset>
+                      <legend>客戶手機</legend>
+                      <input type="text" placeholder="製作＆付款備註">
+                    </fieldset>
+                    <fieldset>
+                      <legend>客戶市話</legend>
+                      <input type="text">
+                    </fieldset>
+                    <fieldset>
+                      <legend>客戶傳真號碼</legend>
+                      <input type="text">
+                    </fieldset>
+                  </div>
+
+                  <div class="fourth">
+                    <fieldset>
+                      <legend>我是備註我是備註我是備註我是備註我是備註我是備註我是備註</legend>
+                      <input type="text">
+                    </fieldset>
+                  </div>
+
+
+                </div>
+
+                <div class="right">
+                  <div class="first">
+                    <fieldset>
+                      <legend>客戶名稱</legend>
+                      <select name="" id="">
+                        <option value="">喜年來大飯店a</option>
+                      </select>
+                    </fieldset>
+                    <fieldset>
+                      <legend>統一編號</legend>
+                      <input type="text">
+                    </fieldset>
+                    <fieldset>
+                      <legend>客戶等級</legend>
+                      <select name="" id="">
+                        <option value="">1</option>
+                      </select>
+                    </fieldset>
+                  </div>
+
+                  <div class="second">
+                    <fieldset>
+                      <legend>發票地址</legend>
+                      <input type="text" placeholder="臺北市內湖區洲子街12號2樓 (台北創新發展中心)">
+                    </fieldset>
+                    <fieldset>
+                      <legend>郵遞區號（自動）</legend>
+                      <input type="text">
+                    </fieldset>
+                  </div>
+
+                  <div class="third">
+                    <fieldset>
+                      <legend>客戶手機</legend>
+                      <input type="text" placeholder="製作＆付款備註">
+                    </fieldset>
+                    <fieldset>
+                      <legend>客戶市話</legend>
+                      <input type="text">
+                    </fieldset>
+                    <fieldset>
+                      <legend>客戶傳真號碼</legend>
+                      <input type="text">
+                    </fieldset>
+                  </div>
+
+                  <div class="fourth">
+                    <fieldset>
+                      <legend>我是備註我是備註我是備註我是備註我是備註我是備註我是備註</legend>
+                      <input type="text">
+                    </fieldset>
+                  </div>
+
+
+                </div>
+
+              </form>
+            </div>
+          </div>
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Save</button>
+            <button type="button" class="btn btn-primary">Add</button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    
+
+    <!-- Edit Modal Open Btn -->
+    <script>
+      function editBtn(index) {
+        $("#modalEdit").modal("show");
+      }
+    </script>
+
+
+
+    <!-- Delete Modal -->
+    <div
+      class="modal fade"
+      id="modalDelete"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-sm modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="modal-edit-wrapper">
+              <div class="content">
+                <i class="ri-delete-bin-5-line"></i>
+                <h6>確定要刪除訂單？</h6>
+                <p>刪除後，訂單將會無法復原。</p>
+              </div>
+              <div class="btns">
+                <button type="button" class="btn btn1">刪除</button>
+                <button type="button" class="btn btn2">取消</button>
+              </div>
+              
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <!-- Delete Modal Open Btn -->
+    <script>
+      function delBtn(index) {
+        $("#modalDelete").modal("show");
+      }
+    </script>
+
+
+
+
+
+  </body>
+</html>
