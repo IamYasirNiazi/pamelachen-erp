@@ -1872,6 +1872,41 @@ a {
   gap: 1rem;
   width: 100%;
 }
+.order-modal-body .modal-edit-wrapper .form .main .right .third .date-label {
+  position: relative;
+}
+@media (max-width: 767px) {
+  .order-modal-body .modal-edit-wrapper .form .main .right .third .date-label::before {
+    position: absolute;
+    color: #292929;
+    content: "";
+    top: 50%;
+    right: 0.5rem !important;
+    transform: translate(-50%, -50%);
+    background: url(../images/calendar.svg) !important;
+    background-repeat: no-repeat;
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+}
+@media (max-width: 767px) {
+  .order-modal-body .modal-edit-wrapper .form .main .right .third input[type=date]::before {
+    color: #292929;
+  }
+}
+@media (max-width: 767px) {
+  .order-modal-body .modal-edit-wrapper .form .main .right .third input[type=date]:focus {
+    content: "";
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+}
+@media (max-width: 3000px) {
+  .order-modal-body .modal-edit-wrapper .form .main .right .third input[type=date]:focus {
+    box-shadow: none !important;
+  }
+}
 @media (max-width: 575px) {
   .order-modal-body .modal-edit-wrapper .form .main .right .third {
     flex-wrap: wrap;
