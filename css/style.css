@@ -1516,6 +1516,16 @@ a {
 .order-modal-body .modal-edit-wrapper .form .main .left .first .select-box {
   width: 30%;
 }
+@media (max-width: 575px) {
+  .order-modal-body .modal-edit-wrapper .form .main .left .first .select-box {
+    width: 40%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .order-modal-body .modal-edit-wrapper .form .main .left .first .select-box {
+    width: 35%;
+  }
+}
 .order-modal-body .modal-edit-wrapper .form .main .left .second {
   display: flex;
   align-items: center;
@@ -1779,12 +1789,12 @@ a {
 }
 @media (max-width: 575px) {
   .order-modal-body .modal-edit-wrapper .form .main .right .second .check {
-    width: 80%;
+    width: 85%;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .order-modal-body .modal-edit-wrapper .form .main .right .second .check {
-    width: 35%;
+    width: 40%;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1854,6 +1864,16 @@ a {
 }
 .order-modal-body .modal-edit-wrapper .form .main .right .fourth .select-box {
   width: 50%;
+}
+@media (max-width: 575px) {
+  .order-modal-body .modal-edit-wrapper .form .main .right .fourth .select-box {
+    width: 60%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .order-modal-body .modal-edit-wrapper .form .main .right .fourth .select-box {
+    width: 55%;
+  }
 }
 .order-modal-body .modal-edit-wrapper .form .main .right .fourth .field1 {
   width: 60%;

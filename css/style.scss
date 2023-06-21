@@ -1606,6 +1606,14 @@ a{
                         
                         .select-box{
                             width: 30%;
+
+                            @media (max-width: 575px){
+                                width: 40%;
+                            }
+                        
+                            @media (min-width: 576px) and (max-width: 767px){
+                                width: 35%;
+                            }
                         }
                     }
     
@@ -1895,11 +1903,11 @@ a{
                             margin-bottom: .8rem !important;
 
                             @media (max-width: 575px){
-                                width: 80%;
+                                width: 85%;
                             }
                         
                             @media (min-width: 576px) and (max-width: 767px){
-                                width: 35%;
+                                width: 40%;
                             }
 
                             @media (min-width: 768px) and (max-width: 991px){
@@ -1973,6 +1981,15 @@ a{
     
                         .select-box{
                             width: 50%;
+
+                            @media (max-width: 575px){
+                                width: 60%;
+                            }
+                        
+                            @media (min-width: 576px) and (max-width: 767px){
+                                width: 55%;
+                            }
+                            
                         }
 
                         .field1{
