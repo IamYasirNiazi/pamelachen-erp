@@ -282,8 +282,8 @@ a {
 }
 @media (max-width: 575px) {
   .login__container__row__col__main-wrapper {
-    padding: 3rem 2rem !important;
-    width: 100% !important;
+    padding: 2rem 2rem !important;
+    width: 95% !important;
   }
 }
 .login__container__row__col__main-wrapper h3 {
