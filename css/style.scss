@@ -1982,6 +1982,16 @@ a{
                         @media (max-width: 767px){
                             flex-wrap: wrap;                        
                         }
+
+                        input[type="text"]{
+                            @media (max-width: 575px){
+                                width: 45%;
+                            }
+                        
+                            @media (min-width: 576px) and (max-width: 767px){
+                                width: 45%;
+                            }
+                        }
     
                         .select-box{
                             width: 50%;

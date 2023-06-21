@@ -1867,6 +1867,16 @@ a {
     flex-wrap: wrap;
   }
 }
+@media (max-width: 575px) {
+  .order-modal-body .modal-edit-wrapper .form .main .right .fourth input[type=text] {
+    width: 45%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .order-modal-body .modal-edit-wrapper .form .main .right .fourth input[type=text] {
+    width: 45%;
+  }
+}
 .order-modal-body .modal-edit-wrapper .form .main .right .fourth .select-box {
   width: 50%;
 }
