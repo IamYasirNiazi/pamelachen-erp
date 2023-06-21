@@ -30,6 +30,49 @@ $theme-colors: (
 }
 
 
+// Date Field
+.date-label{
+    position: relative;
+
+    @media (max-width:767px){
+        label{
+            display: none;
+        }
+    }
+}
+
+
+.date-label::before{
+    @media (max-width:767px) {
+        position: absolute;
+        color: #292929;
+        content: '';
+        top: 1.7rem;
+        right: 1.1rem;
+        background: url(../images/calendar.svg);
+        background-repeat: no-repeat;
+        width: .95rem;
+        height: .95rem;
+    }
+}
+
+
+input[type="date"]::before{
+    @media (max-width:767px) {
+        color: #292929;
+        content: attr(placeholder);
+    }
+}
+
+input[type="date"]:focus{
+    @media (max-width:767px) {
+        content: '';
+        outline: none;
+        border: none;
+        box-shadow: none;
+    }
+}
+
 
 ::-webkit-scrollbar-track
 {

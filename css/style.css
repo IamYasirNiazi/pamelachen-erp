@@ -6,6 +6,45 @@
   box-sizing: border-box;
 }
 
+.date-label {
+  position: relative;
+}
+@media (max-width: 767px) {
+  .date-label label {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .date-label::before {
+    position: absolute;
+    color: #292929;
+    content: "";
+    top: 1.7rem;
+    right: 1.1rem;
+    background: url(../images/calendar.svg);
+    background-repeat: no-repeat;
+    width: 0.95rem;
+    height: 0.95rem;
+  }
+}
+
+@media (max-width: 767px) {
+  input[type=date]::before {
+    color: #292929;
+    content: attr(placeholder);
+  }
+}
+
+@media (max-width: 767px) {
+  input[type=date]:focus {
+    content: "";
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+}
+
 ::-webkit-scrollbar-track {
   border-radius: 10px;
   background-color: #F5F5F5;
