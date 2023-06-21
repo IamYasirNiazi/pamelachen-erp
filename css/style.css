@@ -1709,45 +1709,6 @@ a {
     font-size: 0.9rem !important;
   }
 }
-.order-modal-body .modal-edit-wrapper .form .main .right fieldset input[type=date] {
-  width: 100%;
-  padding: 0.55rem 1rem;
-  background: none;
-  border: none;
-  outline: none;
-  font-size: 0.8rem;
-}
-@media (max-width: 575px) {
-  .order-modal-body .modal-edit-wrapper .form .main .right fieldset input[type=date] {
-    font-size: 0.75rem !important;
-  }
-}
-@media (min-width: 576px) and (max-width: 767px) {
-  .order-modal-body .modal-edit-wrapper .form .main .right fieldset input[type=date] {
-    font-size: 0.8rem !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .order-modal-body .modal-edit-wrapper .form .main .right fieldset input[type=date] {
-    font-size: 0.8rem !important;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .order-modal-body .modal-edit-wrapper .form .main .right fieldset input[type=date] {
-    padding: 0.55rem 0.7rem !important;
-    font-size: 0.85rem !important;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1399px) {
-  .order-modal-body .modal-edit-wrapper .form .main .right fieldset input[type=date] {
-    font-size: 0.9rem !important;
-  }
-}
-@media (min-width: 1400px) {
-  .order-modal-body .modal-edit-wrapper .form .main .right fieldset input[type=date] {
-    font-size: 0.95rem !important;
-  }
-}
 .order-modal-body .modal-edit-wrapper .form .main .right fieldset input {
   width: 100%;
   padding: 0.55rem 1rem;
@@ -1910,6 +1871,11 @@ a {
   align-items: center;
   gap: 1rem;
   width: 100%;
+}
+@media (max-width: 575px) {
+  .order-modal-body .modal-edit-wrapper .form .main .right .third {
+    flex-wrap: wrap;
+  }
 }
 .order-modal-body .modal-edit-wrapper .form .main .right .third fieldset {
   width: 100%;
