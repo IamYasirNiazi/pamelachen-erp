@@ -38,6 +38,11 @@
     box-shadow: none;
   }
 }
+@media (max-width: 3000px) {
+  input[type=date]:focus {
+    box-shadow: none !important;
+  }
+}
 
 ::-webkit-scrollbar-track {
   border-radius: 10px;

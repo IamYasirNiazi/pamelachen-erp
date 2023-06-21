@@ -33,12 +33,6 @@ $theme-colors: (
 // Date Field
 .date-label{
     position: relative;
-
-//     @media (max-width:767px){
-//         label{
-//             display: none;
-//         }
-// /    }
 }
 
 
@@ -71,7 +65,12 @@ input[type="date"]:focus{
         border: none;
         box-shadow: none;
     }
+
+    @media (max-width:3000px) {
+        box-shadow: none !important;
+    }
 }
+
 
 
 
