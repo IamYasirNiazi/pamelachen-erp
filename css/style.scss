@@ -411,11 +411,11 @@ a{
                                 border: 1px solid theme-color(site-text-input-border);
 
                                 @media (max-width: 575px){
-                                    width: 90% !important;
+                                    width: 85% !important;
                                 }
                             
                                 @media (min-width: 576px) and (max-width: 767px){
-                                    width: 90% !important;
+                                    width: 85% !important;
                                 }
 
                                 
@@ -456,6 +456,14 @@ a{
                                 background-color: theme-color(site-text-input-bg);
                                 border-radius: .3rem;
                                 border: 1px solid theme-color(site-text-input-border);
+
+                                @media (max-width: 575px){
+                                    width: 85% !important;
+                                }
+                            
+                                @media (min-width: 576px) and (max-width: 767px){
+                                    width: 85% !important;
+                                }
                                 
                                 input{
                                     padding: .55rem 1rem;
@@ -532,6 +540,14 @@ a{
                             background-color: theme-color(site-fifth);
                             color: theme-color(site-text-w);
                             padding: .7rem 1rem !important;
+
+                            @media (max-width: 575px){
+                                width: 85% !important;
+                            }
+                        
+                            @media (min-width: 576px) and (max-width: 767px){
+                                width: 85% !important;
+                            }
 
                             @media (max-width: 575px){
                                 font-size: .8rem;
