@@ -330,6 +330,16 @@ a {
   border-radius: 0.3rem;
   border: 1px solid rgba(34, 34, 34, 0.3137254902);
 }
+@media (max-width: 575px) {
+  .login__container__row__col__main-wrapper .form .input .text {
+    width: 90% !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .login__container__row__col__main-wrapper .form .input .text {
+    width: 90% !important;
+  }
+}
 .login__container__row__col__main-wrapper .form .input .text input {
   padding: 0.55rem 1rem;
   background: none;

@@ -410,6 +410,14 @@ a{
                                 border-radius: .3rem;
                                 border: 1px solid theme-color(site-text-input-border);
 
+                                @media (max-width: 575px){
+                                    width: 90% !important;
+                                }
+                            
+                                @media (min-width: 576px) and (max-width: 767px){
+                                    width: 90% !important;
+                                }
+
                                 
                                 input{
                                     padding: .55rem 1rem;
