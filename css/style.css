@@ -30,13 +30,13 @@
 }
 
 @media (max-width: 767px) {
-  input[type=date]::before {
+  .date::before {
     color: #292929;
   }
 }
 
 @media (max-width: 767px) {
-  input[type=date]:focus {
+  .date:focus {
     content: "";
     outline: none;
     border: none;
