@@ -1880,13 +1880,13 @@ a {
     position: absolute;
     color: #292929;
     content: "";
-    top: 50%;
+    top: 42%;
     right: 0.6rem !important;
     transform: translate(-50%, -50%);
     background: url(../images/calendar.svg) !important;
     background-repeat: no-repeat !important;
-    width: 0.75rem;
-    height: 0.75rem;
+    width: 0.8rem;
+    height: 0.8rem;
   }
 }
 @media (max-width: 767px) {
