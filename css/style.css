@@ -1862,6 +1862,11 @@ a {
   gap: 1rem;
   width: 100%;
 }
+@media (max-width: 575px) {
+  .order-modal-body .modal-edit-wrapper .form .main .right .fourth {
+    flex-wrap: wrap;
+  }
+}
 .order-modal-body .modal-edit-wrapper .form .main .right .fourth .select-box {
   width: 50%;
 }

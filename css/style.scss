@@ -1978,6 +1978,10 @@ a{
                         align-items: center;
                         gap: 1rem;
                         width: 100%;
+
+                        @media (max-width: 575px){
+                            flex-wrap: wrap;                        
+                        }
     
                         .select-box{
                             width: 50%;
