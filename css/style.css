@@ -283,7 +283,7 @@ a {
 }
 @media (max-width: 575px) {
   .login__container__row__col__main-wrapper {
-    padding: 2rem 2rem !important;
+    padding: 2rem 1rem !important;
     width: 95% !important;
   }
 }
