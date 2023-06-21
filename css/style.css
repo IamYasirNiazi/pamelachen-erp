@@ -32,6 +32,7 @@
 @media (max-width: 767px) {
   .date::before {
     color: #292929;
+    content: attr(placeholder);
   }
 }
 
