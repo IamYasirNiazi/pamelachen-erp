@@ -64,11 +64,11 @@
   overflow-x: auto;
 }
 
-.modal:nth-of-type(even) {
+.modal:nth-of-type() {
   z-index: 1062 !important;
 }
 
-.modal-backdrop.show:nth-of-type(even) {
+.modal-backdrop.show:nth-of-type() {
   z-index: 1061 !important;
 }
 
@@ -1384,17 +1384,17 @@ a {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .order-modal-body .modal-edit-wrapper .form .main .left {
-    width: 100%;
+    width: 47%;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   .order-modal-body .modal-edit-wrapper .form .main .left {
-    width: 100%;
+    width: 47%;
   }
 }
 @media (min-width: 1400px) {
   .order-modal-body .modal-edit-wrapper .form .main .left {
-    width: 100%;
+    width: 47%;
   }
 }
 .order-modal-body .modal-edit-wrapper .form .main .left fieldset {
@@ -1459,6 +1459,7 @@ a {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .order-modal-body .modal-edit-wrapper .form .main .left fieldset input {
+    padding: 0.55rem 0.7rem !important;
     font-size: 0.85rem !important;
   }
 }
@@ -1497,6 +1498,7 @@ a {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .order-modal-body .modal-edit-wrapper .form .main .left fieldset select {
+    padding: 0.55rem 0.7rem !important;
     font-size: 0.85rem !important;
   }
 }
@@ -1605,6 +1607,7 @@ a {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .order-modal-body .modal-edit-wrapper .form .main .left .fourth fieldset textarea {
+    padding: 0.55rem 0.7rem !important;
     font-size: 0.85rem !important;
   }
 }
@@ -1648,17 +1651,17 @@ a {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .order-modal-body .modal-edit-wrapper .form .main .right {
-    width: 100%;
+    width: 47%;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   .order-modal-body .modal-edit-wrapper .form .main .right {
-    width: 100%;
+    width: 47%;
   }
 }
 @media (min-width: 1400px) {
   .order-modal-body .modal-edit-wrapper .form .main .right {
-    width: 100%;
+    width: 47%;
   }
 }
 .order-modal-body .modal-edit-wrapper .form .main .right fieldset {
@@ -1698,6 +1701,45 @@ a {
     font-size: 0.9rem !important;
   }
 }
+.order-modal-body .modal-edit-wrapper .form .main .right fieldset input[type=date] {
+  width: 100%;
+  padding: 0.55rem 1rem;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 0.8rem;
+}
+@media (max-width: 575px) {
+  .order-modal-body .modal-edit-wrapper .form .main .right fieldset input[type=date] {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .order-modal-body .modal-edit-wrapper .form .main .right fieldset input[type=date] {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .order-modal-body .modal-edit-wrapper .form .main .right fieldset input[type=date] {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .order-modal-body .modal-edit-wrapper .form .main .right fieldset input[type=date] {
+    padding: 0.55rem 0.7rem !important;
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .order-modal-body .modal-edit-wrapper .form .main .right fieldset input[type=date] {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .order-modal-body .modal-edit-wrapper .form .main .right fieldset input[type=date] {
+    font-size: 0.95rem !important;
+  }
+}
 .order-modal-body .modal-edit-wrapper .form .main .right fieldset input {
   width: 100%;
   padding: 0.55rem 1rem;
@@ -1723,6 +1765,7 @@ a {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .order-modal-body .modal-edit-wrapper .form .main .right fieldset input {
+    padding: 0.55rem 0.7rem !important;
     font-size: 0.85rem !important;
   }
 }
@@ -1761,6 +1804,7 @@ a {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .order-modal-body .modal-edit-wrapper .form .main .right fieldset select {
+    padding: 0.55rem 0.7rem !important;
     font-size: 0.85rem !important;
   }
 }
@@ -1807,7 +1851,7 @@ a {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .order-modal-body .modal-edit-wrapper .form .main .right .second .check {
-    width: 72% !important;
+    width: 70% !important;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -2371,201 +2415,395 @@ a {
   color: #fff;
 }
 
-.modal-sec {
-  width: 60% !important;
-}
-
-.second-order-modal-title {
+.first-modal-title {
   font-size: 1rem !important;
 }
 @media (max-width: 575px) {
-  .second-order-modal-title {
+  .first-modal-title {
     font-size: 0.9rem;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .second-order-modal-title {
+  .first-modal-title {
     font-size: 1rem;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .second-order-modal-title {
+  .first-modal-title {
     font-size: 1rem !important;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .second-order-modal-title {
+  .first-modal-title {
     font-size: 1.05rem !important;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .second-order-modal-title {
+  .first-modal-title {
     font-size: 1.2rem !important;
   }
 }
 @media (min-width: 1400px) {
-  .second-order-modal-title {
+  .first-modal-title {
     font-size: 1.3rem !important;
   }
 }
 
-.second-order-modal-body .modal-edit-wrapper {
+.first-modal-body .modal-edit-wrapper {
   padding: 1.5rem 2rem !important;
 }
 @media (max-width: 575px) {
-  .second-order-modal-body .modal-edit-wrapper {
+  .first-modal-body .modal-edit-wrapper {
     padding: 1rem 1rem !important;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .second-order-modal-body .modal-edit-wrapper {
+  .first-modal-body .modal-edit-wrapper {
     padding: 1rem 1.5rem !important;
   }
 }
-.second-order-modal-body .modal-edit-wrapper .form {
+.first-modal-body .modal-edit-wrapper .form {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.second-order-modal-body .modal-edit-wrapper .form .main {
+.first-modal-body .modal-edit-wrapper .form .main {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
-.second-order-modal-body .modal-edit-wrapper .form .main fieldset {
+.first-modal-body .modal-edit-wrapper .form .main fieldset {
   border-radius: 0.3rem;
 }
-.second-order-modal-body .modal-edit-wrapper .form .main fieldset legend {
+.first-modal-body .modal-edit-wrapper .form .main fieldset legend {
   font-size: 0.75rem;
   margin-bottom: 0 !important;
 }
 @media (max-width: 575px) {
-  .second-order-modal-body .modal-edit-wrapper .form .main fieldset legend {
+  .first-modal-body .modal-edit-wrapper .form .main fieldset legend {
     font-size: 0.7rem !important;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .second-order-modal-body .modal-edit-wrapper .form .main fieldset legend {
+  .first-modal-body .modal-edit-wrapper .form .main fieldset legend {
     font-size: 0.75rem !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .second-order-modal-body .modal-edit-wrapper .form .main fieldset legend {
+  .first-modal-body .modal-edit-wrapper .form .main fieldset legend {
     font-size: 0.75rem !important;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .second-order-modal-body .modal-edit-wrapper .form .main fieldset legend {
+  .first-modal-body .modal-edit-wrapper .form .main fieldset legend {
     font-size: 0.8rem !important;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .second-order-modal-body .modal-edit-wrapper .form .main fieldset legend {
+  .first-modal-body .modal-edit-wrapper .form .main fieldset legend {
     font-size: 0.85rem !important;
   }
 }
 @media (min-width: 1400px) {
-  .second-order-modal-body .modal-edit-wrapper .form .main fieldset legend {
+  .first-modal-body .modal-edit-wrapper .form .main fieldset legend {
     font-size: 0.9rem !important;
   }
 }
-.second-order-modal-body .modal-edit-wrapper .form .main fieldset input {
+.first-modal-body .modal-edit-wrapper .form .main fieldset select {
   width: 100%;
-  padding: 0.55rem 1rem;
+  padding: 0.5rem 1rem;
   background: none;
   border: none;
   outline: none;
   font-size: 0.8rem;
 }
 @media (max-width: 575px) {
-  .second-order-modal-body .modal-edit-wrapper .form .main fieldset input {
+  .first-modal-body .modal-edit-wrapper .form .main fieldset select {
     font-size: 0.75rem !important;
+    padding: 0.4rem 0.8rem;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .second-order-modal-body .modal-edit-wrapper .form .main fieldset input {
+  .first-modal-body .modal-edit-wrapper .form .main fieldset select {
     font-size: 0.8rem !important;
+    padding: 0.4rem 0.8rem;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .second-order-modal-body .modal-edit-wrapper .form .main fieldset input {
+  .first-modal-body .modal-edit-wrapper .form .main fieldset select {
     font-size: 0.8rem !important;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .second-order-modal-body .modal-edit-wrapper .form .main fieldset input {
+  .first-modal-body .modal-edit-wrapper .form .main fieldset select {
     font-size: 0.85rem !important;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .second-order-modal-body .modal-edit-wrapper .form .main fieldset input {
+  .first-modal-body .modal-edit-wrapper .form .main fieldset select {
     font-size: 0.9rem !important;
   }
 }
 @media (min-width: 1400px) {
-  .second-order-modal-body .modal-edit-wrapper .form .main fieldset input {
+  .first-modal-body .modal-edit-wrapper .form .main fieldset select {
     font-size: 0.95rem !important;
   }
 }
-.second-order-modal-body .modal-edit-wrapper .form .main fieldset select {
-  width: 100%;
-  padding: 0.55rem 1rem;
-  background: none;
-  border: none;
-  outline: none;
-  font-size: 0.8rem;
-}
-@media (max-width: 575px) {
-  .second-order-modal-body .modal-edit-wrapper .form .main fieldset select {
-    font-size: 0.75rem !important;
-  }
-}
-@media (min-width: 576px) and (max-width: 767px) {
-  .second-order-modal-body .modal-edit-wrapper .form .main fieldset select {
-    font-size: 0.8rem !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .second-order-modal-body .modal-edit-wrapper .form .main fieldset select {
-    font-size: 0.8rem !important;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .second-order-modal-body .modal-edit-wrapper .form .main fieldset select {
-    font-size: 0.85rem !important;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1399px) {
-  .second-order-modal-body .modal-edit-wrapper .form .main fieldset select {
-    font-size: 0.9rem !important;
-  }
-}
-@media (min-width: 1400px) {
-  .second-order-modal-body .modal-edit-wrapper .form .main fieldset select {
-    font-size: 0.95rem !important;
-  }
-}
-.second-order-modal-body .modal-edit-wrapper .form .main .first {
+.first-modal-body .modal-edit-wrapper .form .main .first {
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 1rem;
   width: 100%;
+  border-bottom: 1px solid rgba(32, 32, 32, 0.3843137255);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
-.second-order-modal-body .modal-edit-wrapper .form .main .first fieldset {
+.first-modal-body .modal-edit-wrapper .form .main .first h6 {
+  display: none;
+}
+@media (max-width: 575px) {
+  .first-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .first-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .first-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .first-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 0.95rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .first-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 1.05rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .first-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 1.1rem !important;
+  }
+}
+.first-modal-body .modal-edit-wrapper .form .main .first .check {
+  display: none;
+}
+.first-modal-body .modal-edit-wrapper .form .main .first .check span {
+  font-size: 0.75rem;
+}
+@media (max-width: 575px) {
+  .first-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .first-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .first-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .first-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .first-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .first-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.9rem !important;
+  }
+}
+.first-modal-body .modal-edit-wrapper .form .main .first .select-wrapper {
   width: 100%;
 }
-.second-order-modal-body .modal-edit-wrapper .form .main .second {
+.first-modal-body .modal-edit-wrapper .form .main .first .select-wrapper div {
   display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.first-modal-body .modal-edit-wrapper .form .main .first fieldset {
+  width: 30%;
+}
+.first-modal-body .modal-edit-wrapper .form .main .second {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+  border-bottom: 1px solid rgba(32, 32, 32, 0.3843137255);
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+.first-modal-body .modal-edit-wrapper .form .main .second h6 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem !important;
+}
+@media (max-width: 575px) {
+  .first-modal-body .modal-edit-wrapper .form .main .second h6 {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .first-modal-body .modal-edit-wrapper .form .main .second h6 {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .first-modal-body .modal-edit-wrapper .form .main .second h6 {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .first-modal-body .modal-edit-wrapper .form .main .second h6 {
+    font-size: 0.95rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .first-modal-body .modal-edit-wrapper .form .main .second h6 {
+    font-size: 1.05rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .first-modal-body .modal-edit-wrapper .form .main .second h6 {
+    font-size: 1.1rem !important;
+  }
+}
+.first-modal-body .modal-edit-wrapper .form .main .second .check {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.first-modal-body .modal-edit-wrapper .form .main .second .check span {
+  font-size: 0.75rem;
+}
+@media (max-width: 575px) {
+  .first-modal-body .modal-edit-wrapper .form .main .second .check span {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .first-modal-body .modal-edit-wrapper .form .main .second .check span {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .first-modal-body .modal-edit-wrapper .form .main .second .check span {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .first-modal-body .modal-edit-wrapper .form .main .second .check span {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .first-modal-body .modal-edit-wrapper .form .main .second .check span {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .first-modal-body .modal-edit-wrapper .form .main .second .check span {
+    font-size: 0.9rem !important;
+  }
+}
+.first-modal-body .modal-edit-wrapper .form .main .second .select-wrapper {
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
   width: 100%;
 }
-.second-order-modal-body .modal-edit-wrapper .form .main .second fieldset {
+.first-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   width: 100%;
 }
-.second-order-modal-body .modal-edit-wrapper .form .main button {
+.first-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend {
+  margin-bottom: 0 !important;
+}
+@media (max-width: 575px) {
+  .first-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend {
+    font-size: 0.65rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .first-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend {
+    font-size: 0.7rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .first-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend {
+    font-size: 0.7rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .first-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .first-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .first-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend {
+    font-size: 0.85rem !important;
+  }
+}
+.first-modal-body .modal-edit-wrapper .form .main .second fieldset {
+  width: 25%;
+}
+@media (max-width: 575px) {
+  .first-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.6rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .first-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.72rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .first-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .first-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .first-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .first-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.9rem !important;
+  }
+}
+.first-modal-body .modal-edit-wrapper .form .main button {
   margin-top: 0.5rem;
   width: 100%;
   display: flex;
@@ -2581,67 +2819,2114 @@ a {
   outline: none;
 }
 @media (max-width: 575px) {
-  .second-order-modal-body .modal-edit-wrapper .form .main button {
+  .first-modal-body .modal-edit-wrapper .form .main button {
     font-size: 0.8rem !important;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .second-order-modal-body .modal-edit-wrapper .form .main button {
+  .first-modal-body .modal-edit-wrapper .form .main button {
     font-size: 0.85rem !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .second-order-modal-body .modal-edit-wrapper .form .main button {
+  .first-modal-body .modal-edit-wrapper .form .main button {
     font-size: 0.85rem !important;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .second-order-modal-body .modal-edit-wrapper .form .main button {
+  .first-modal-body .modal-edit-wrapper .form .main button {
     font-size: 0.9rem !important;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .second-order-modal-body .modal-edit-wrapper .form .main button {
+  .first-modal-body .modal-edit-wrapper .form .main button {
     font-size: 0.95rem !important;
   }
 }
 @media (min-width: 1400px) {
-  .second-order-modal-body .modal-edit-wrapper .form .main button {
+  .first-modal-body .modal-edit-wrapper .form .main button {
     font-size: 1rem !important;
   }
 }
-.second-order-modal-body .modal-edit-wrapper .form .main button:hover {
-  background-color: #0067db !important;
+.first-modal-body .modal-edit-wrapper .form .main button:hover {
+  background-color: #0067db;
   color: #fff;
 }
-.second-order-modal-body .modal-edit-wrapper .form .main button i {
+
+.second-modal-title {
+  font-size: 1rem !important;
+}
+@media (max-width: 575px) {
+  .second-modal-title {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .second-modal-title {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .second-modal-title {
+    font-size: 1rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .second-modal-title {
+    font-size: 1.05rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .second-modal-title {
+    font-size: 1.2rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .second-modal-title {
+    font-size: 1.3rem !important;
+  }
+}
+
+.second-modal-body .modal-edit-wrapper {
+  padding: 1.5rem 2rem !important;
+}
+@media (max-width: 575px) {
+  .second-modal-body .modal-edit-wrapper {
+    padding: 1rem 1rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .second-modal-body .modal-edit-wrapper {
+    padding: 1rem 1.5rem !important;
+  }
+}
+.second-modal-body .modal-edit-wrapper .form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.second-modal-body .modal-edit-wrapper .form .main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.second-modal-body .modal-edit-wrapper .form .main fieldset {
+  border-radius: 0.3rem;
+}
+.second-modal-body .modal-edit-wrapper .form .main fieldset legend {
+  font-size: 0.75rem;
+  margin-bottom: 0 !important;
+}
+@media (max-width: 575px) {
+  .second-modal-body .modal-edit-wrapper .form .main fieldset legend {
+    font-size: 0.7rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .second-modal-body .modal-edit-wrapper .form .main fieldset legend {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .second-modal-body .modal-edit-wrapper .form .main fieldset legend {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .second-modal-body .modal-edit-wrapper .form .main fieldset legend {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .second-modal-body .modal-edit-wrapper .form .main fieldset legend {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .second-modal-body .modal-edit-wrapper .form .main fieldset legend {
+    font-size: 0.9rem !important;
+  }
+}
+.second-modal-body .modal-edit-wrapper .form .main fieldset select {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background: none;
+  border: none;
+  outline: none;
   font-size: 0.8rem;
 }
 @media (max-width: 575px) {
-  .second-order-modal-body .modal-edit-wrapper .form .main button i {
+  .second-modal-body .modal-edit-wrapper .form .main fieldset select {
+    font-size: 0.75rem !important;
+    padding: 0.4rem 0.8rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .second-modal-body .modal-edit-wrapper .form .main fieldset select {
+    font-size: 0.8rem !important;
+    padding: 0.4rem 0.8rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .second-modal-body .modal-edit-wrapper .form .main fieldset select {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .second-modal-body .modal-edit-wrapper .form .main fieldset select {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .second-modal-body .modal-edit-wrapper .form .main fieldset select {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .second-modal-body .modal-edit-wrapper .form .main fieldset select {
+    font-size: 0.95rem !important;
+  }
+}
+.second-modal-body .modal-edit-wrapper .form .main .first {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+  border-bottom: 1px solid rgba(32, 32, 32, 0.3843137255);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.second-modal-body .modal-edit-wrapper .form .main .first h6 {
+  display: none;
+}
+@media (max-width: 575px) {
+  .second-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .second-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .second-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .second-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 0.95rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .second-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 1.05rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .second-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 1.1rem !important;
+  }
+}
+.second-modal-body .modal-edit-wrapper .form .main .first .check {
+  display: none;
+}
+.second-modal-body .modal-edit-wrapper .form .main .first .check span {
+  font-size: 0.75rem;
+}
+@media (max-width: 575px) {
+  .second-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .second-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .second-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .second-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .second-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .second-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.9rem !important;
+  }
+}
+.second-modal-body .modal-edit-wrapper .form .main .first .select-wrapper {
+  width: 100%;
+}
+.second-modal-body .modal-edit-wrapper .form .main .first .select-wrapper div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.second-modal-body .modal-edit-wrapper .form .main .first fieldset {
+  width: 30%;
+}
+.second-modal-body .modal-edit-wrapper .form .main .second {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+  border-bottom: 1px solid rgba(32, 32, 32, 0.3843137255);
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+.second-modal-body .modal-edit-wrapper .form .main .second h6 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem !important;
+}
+@media (max-width: 575px) {
+  .second-modal-body .modal-edit-wrapper .form .main .second h6 {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .second-modal-body .modal-edit-wrapper .form .main .second h6 {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .second-modal-body .modal-edit-wrapper .form .main .second h6 {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .second-modal-body .modal-edit-wrapper .form .main .second h6 {
+    font-size: 0.95rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .second-modal-body .modal-edit-wrapper .form .main .second h6 {
+    font-size: 1.05rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .second-modal-body .modal-edit-wrapper .form .main .second h6 {
+    font-size: 1.1rem !important;
+  }
+}
+.second-modal-body .modal-edit-wrapper .form .main .second .check {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.second-modal-body .modal-edit-wrapper .form .main .second .check span {
+  font-size: 0.75rem;
+}
+@media (max-width: 575px) {
+  .second-modal-body .modal-edit-wrapper .form .main .second .check span {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .second-modal-body .modal-edit-wrapper .form .main .second .check span {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .second-modal-body .modal-edit-wrapper .form .main .second .check span {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .second-modal-body .modal-edit-wrapper .form .main .second .check span {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .second-modal-body .modal-edit-wrapper .form .main .second .check span {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .second-modal-body .modal-edit-wrapper .form .main .second .check span {
+    font-size: 0.9rem !important;
+  }
+}
+.second-modal-body .modal-edit-wrapper .form .main .second .select-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+}
+.second-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.second-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend {
+  margin-bottom: 0 !important;
+}
+@media (max-width: 575px) {
+  .second-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend {
+    font-size: 0.65rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .second-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend {
+    font-size: 0.7rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .second-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend {
+    font-size: 0.7rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .second-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .second-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .second-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend {
+    font-size: 0.85rem !important;
+  }
+}
+.second-modal-body .modal-edit-wrapper .form .main .second fieldset {
+  width: 25%;
+}
+@media (max-width: 575px) {
+  .second-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.6rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .second-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.72rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .second-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .second-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .second-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .second-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.9rem !important;
+  }
+}
+.second-modal-body .modal-edit-wrapper .form .main button {
+  margin-top: 0.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  font-size: 0.75rem;
+  padding: 0.85rem 1rem !important;
+  border-radius: 0.3rem !important;
+  background-color: #005BC1;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+@media (max-width: 575px) {
+  .second-modal-body .modal-edit-wrapper .form .main button {
     font-size: 0.8rem !important;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .second-order-modal-body .modal-edit-wrapper .form .main button i {
+  .second-modal-body .modal-edit-wrapper .form .main button {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .second-modal-body .modal-edit-wrapper .form .main button {
     font-size: 0.85rem !important;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .second-order-modal-body .modal-edit-wrapper .form .main button i {
+  .second-modal-body .modal-edit-wrapper .form .main button {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .second-modal-body .modal-edit-wrapper .form .main button {
+    font-size: 0.95rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .second-modal-body .modal-edit-wrapper .form .main button {
+    font-size: 1rem !important;
+  }
+}
+.second-modal-body .modal-edit-wrapper .form .main button:hover {
+  background-color: #0067db;
+  color: #fff;
+}
+
+.third-modal-title {
+  font-size: 1rem !important;
+}
+@media (max-width: 575px) {
+  .third-modal-title {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .third-modal-title {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .third-modal-title {
+    font-size: 1rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .third-modal-title {
+    font-size: 1.05rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .third-modal-title {
+    font-size: 1.2rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .third-modal-title {
+    font-size: 1.3rem !important;
+  }
+}
+
+.third-modal-body .modal-edit-wrapper {
+  padding: 1.5rem 2rem !important;
+}
+@media (max-width: 575px) {
+  .third-modal-body .modal-edit-wrapper {
+    padding: 1rem 1rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .third-modal-body .modal-edit-wrapper {
+    padding: 1rem 1.5rem !important;
+  }
+}
+.third-modal-body .modal-edit-wrapper .form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.third-modal-body .modal-edit-wrapper .form .main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.third-modal-body .modal-edit-wrapper .form .main fieldset {
+  border-radius: 0.3rem;
+}
+.third-modal-body .modal-edit-wrapper .form .main fieldset legend {
+  font-size: 0.75rem;
+  margin-bottom: 0 !important;
+}
+@media (max-width: 575px) {
+  .third-modal-body .modal-edit-wrapper .form .main fieldset legend {
+    font-size: 0.7rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .third-modal-body .modal-edit-wrapper .form .main fieldset legend {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .third-modal-body .modal-edit-wrapper .form .main fieldset legend {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .third-modal-body .modal-edit-wrapper .form .main fieldset legend {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .third-modal-body .modal-edit-wrapper .form .main fieldset legend {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .third-modal-body .modal-edit-wrapper .form .main fieldset legend {
+    font-size: 0.9rem !important;
+  }
+}
+.third-modal-body .modal-edit-wrapper .form .main fieldset select {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 0.8rem;
+}
+@media (max-width: 575px) {
+  .third-modal-body .modal-edit-wrapper .form .main fieldset select {
+    font-size: 0.75rem !important;
+    padding: 0.4rem 0.8rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .third-modal-body .modal-edit-wrapper .form .main fieldset select {
+    font-size: 0.8rem !important;
+    padding: 0.4rem 0.8rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .third-modal-body .modal-edit-wrapper .form .main fieldset select {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .third-modal-body .modal-edit-wrapper .form .main fieldset select {
     font-size: 0.85rem !important;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .second-order-modal-body .modal-edit-wrapper .form .main button i {
+  .third-modal-body .modal-edit-wrapper .form .main fieldset select {
     font-size: 0.9rem !important;
   }
 }
 @media (min-width: 1400px) {
-  .second-order-modal-body .modal-edit-wrapper .form .main button i {
+  .third-modal-body .modal-edit-wrapper .form .main fieldset select {
     font-size: 0.95rem !important;
   }
 }
+.third-modal-body .modal-edit-wrapper .form .main .first {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+  border-bottom: 1px solid rgba(32, 32, 32, 0.3843137255);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.third-modal-body .modal-edit-wrapper .form .main .first h6 {
+  display: none;
+}
+@media (max-width: 575px) {
+  .third-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .third-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .third-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .third-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 0.95rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .third-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 1.05rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .third-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 1.1rem !important;
+  }
+}
+.third-modal-body .modal-edit-wrapper .form .main .first .check {
+  display: none;
+}
+.third-modal-body .modal-edit-wrapper .form .main .first .check span {
+  font-size: 0.75rem;
+}
+@media (max-width: 575px) {
+  .third-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .third-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .third-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .third-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .third-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .third-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.9rem !important;
+  }
+}
+.third-modal-body .modal-edit-wrapper .form .main .first .select-wrapper {
+  width: 100%;
+}
+.third-modal-body .modal-edit-wrapper .form .main .first .select-wrapper div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.third-modal-body .modal-edit-wrapper .form .main .first fieldset {
+  width: 30%;
+}
+.third-modal-body .modal-edit-wrapper .form .main .second {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+  border-bottom: 1px solid rgba(32, 32, 32, 0.3843137255);
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+.third-modal-body .modal-edit-wrapper .form .main .second h6 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem !important;
+}
+@media (max-width: 575px) {
+  .third-modal-body .modal-edit-wrapper .form .main .second h6 {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .third-modal-body .modal-edit-wrapper .form .main .second h6 {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .third-modal-body .modal-edit-wrapper .form .main .second h6 {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .third-modal-body .modal-edit-wrapper .form .main .second h6 {
+    font-size: 0.95rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .third-modal-body .modal-edit-wrapper .form .main .second h6 {
+    font-size: 1.05rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .third-modal-body .modal-edit-wrapper .form .main .second h6 {
+    font-size: 1.1rem !important;
+  }
+}
+.third-modal-body .modal-edit-wrapper .form .main .second .check {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.third-modal-body .modal-edit-wrapper .form .main .second .check span {
+  font-size: 0.75rem;
+}
+@media (max-width: 575px) {
+  .third-modal-body .modal-edit-wrapper .form .main .second .check span {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .third-modal-body .modal-edit-wrapper .form .main .second .check span {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .third-modal-body .modal-edit-wrapper .form .main .second .check span {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .third-modal-body .modal-edit-wrapper .form .main .second .check span {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .third-modal-body .modal-edit-wrapper .form .main .second .check span {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .third-modal-body .modal-edit-wrapper .form .main .second .check span {
+    font-size: 0.9rem !important;
+  }
+}
+.third-modal-body .modal-edit-wrapper .form .main .second .select-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  width: 85%;
+}
+.third-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.third-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend, .third-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div span {
+  margin-bottom: 0 !important;
+}
+@media (max-width: 575px) {
+  .third-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend, .third-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div span {
+    font-size: 0.65rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .third-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend, .third-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div span {
+    font-size: 0.7rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .third-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend, .third-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div span {
+    font-size: 0.7rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .third-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend, .third-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div span {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .third-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend, .third-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div span {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .third-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend, .third-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div span {
+    font-size: 0.85rem !important;
+  }
+}
+.third-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div fieldset {
+  width: 100%;
+}
+.third-modal-body .modal-edit-wrapper .form .main .second fieldset {
+  width: 100%;
+}
+@media (max-width: 575px) {
+  .third-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.6rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .third-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.72rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .third-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .third-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .third-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .third-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.9rem !important;
+  }
+}
+.third-modal-body .modal-edit-wrapper .form .main button {
+  margin-top: 0.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  font-size: 0.75rem;
+  padding: 0.85rem 1rem !important;
+  border-radius: 0.3rem !important;
+  background-color: #005BC1;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+@media (max-width: 575px) {
+  .third-modal-body .modal-edit-wrapper .form .main button {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .third-modal-body .modal-edit-wrapper .form .main button {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .third-modal-body .modal-edit-wrapper .form .main button {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .third-modal-body .modal-edit-wrapper .form .main button {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .third-modal-body .modal-edit-wrapper .form .main button {
+    font-size: 0.95rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .third-modal-body .modal-edit-wrapper .form .main button {
+    font-size: 1rem !important;
+  }
+}
+.third-modal-body .modal-edit-wrapper .form .main button:hover {
+  background-color: #0067db;
+  color: #fff;
+}
+
+.fourth-modal-title {
+  font-size: 1rem !important;
+}
+@media (max-width: 575px) {
+  .fourth-modal-title {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .fourth-modal-title {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .fourth-modal-title {
+    font-size: 1rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .fourth-modal-title {
+    font-size: 1.05rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .fourth-modal-title {
+    font-size: 1.2rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .fourth-modal-title {
+    font-size: 1.3rem !important;
+  }
+}
+
+.fourth-modal-body .modal-edit-wrapper {
+  padding: 1.5rem 2rem !important;
+}
+@media (max-width: 575px) {
+  .fourth-modal-body .modal-edit-wrapper {
+    padding: 1rem 1rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .fourth-modal-body .modal-edit-wrapper {
+    padding: 1rem 1.5rem !important;
+  }
+}
+.fourth-modal-body .modal-edit-wrapper .form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.fourth-modal-body .modal-edit-wrapper .form .main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.fourth-modal-body .modal-edit-wrapper .form .main fieldset {
+  border-radius: 0.3rem;
+}
+.fourth-modal-body .modal-edit-wrapper .form .main fieldset legend {
+  font-size: 0.75rem;
+  margin-bottom: 0 !important;
+}
+@media (max-width: 575px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main fieldset legend {
+    font-size: 0.7rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main fieldset legend {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main fieldset legend {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main fieldset legend {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main fieldset legend {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main fieldset legend {
+    font-size: 0.9rem !important;
+  }
+}
+.fourth-modal-body .modal-edit-wrapper .form .main fieldset select {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 0.8rem;
+}
+@media (max-width: 575px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main fieldset select {
+    font-size: 0.75rem !important;
+    padding: 0.4rem 0.8rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main fieldset select {
+    font-size: 0.8rem !important;
+    padding: 0.4rem 0.8rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main fieldset select {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main fieldset select {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main fieldset select {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main fieldset select {
+    font-size: 0.95rem !important;
+  }
+}
+.fourth-modal-body .modal-edit-wrapper .form .main .first {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+  border-bottom: 1px solid rgba(32, 32, 32, 0.3843137255);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.fourth-modal-body .modal-edit-wrapper .form .main .first h6 {
+  display: none;
+}
+@media (max-width: 575px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 0.95rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 1.05rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 1.1rem !important;
+  }
+}
+.fourth-modal-body .modal-edit-wrapper .form .main .first .check {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.fourth-modal-body .modal-edit-wrapper .form .main .first .check span {
+  font-size: 0.75rem;
+}
+@media (max-width: 575px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.9rem !important;
+  }
+}
+.fourth-modal-body .modal-edit-wrapper .form .main .first .select-wrapper {
+  width: 100%;
+}
+.fourth-modal-body .modal-edit-wrapper .form .main .first .select-wrapper div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.fourth-modal-body .modal-edit-wrapper .form .main .first fieldset {
+  width: 25%;
+}
+@media (max-width: 575px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.6rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.72rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.9rem !important;
+  }
+}
+.fourth-modal-body .modal-edit-wrapper .form .main button {
+  margin-top: 0.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  font-size: 0.75rem;
+  padding: 0.85rem 1rem !important;
+  border-radius: 0.3rem !important;
+  background-color: #005BC1;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+@media (max-width: 575px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main button {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main button {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main button {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main button {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main button {
+    font-size: 0.95rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .fourth-modal-body .modal-edit-wrapper .form .main button {
+    font-size: 1rem !important;
+  }
+}
+.fourth-modal-body .modal-edit-wrapper .form .main button:hover {
+  background-color: #0067db;
+  color: #fff;
+}
+
+.fifth-modal-title {
+  font-size: 1rem !important;
+}
+@media (max-width: 575px) {
+  .fifth-modal-title {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .fifth-modal-title {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .fifth-modal-title {
+    font-size: 1rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .fifth-modal-title {
+    font-size: 1.05rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .fifth-modal-title {
+    font-size: 1.2rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .fifth-modal-title {
+    font-size: 1.3rem !important;
+  }
+}
+
+.fifth-modal-body .modal-edit-wrapper {
+  padding: 1.5rem 2rem !important;
+}
+@media (max-width: 575px) {
+  .fifth-modal-body .modal-edit-wrapper {
+    padding: 1rem 1rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .fifth-modal-body .modal-edit-wrapper {
+    padding: 1rem 1.5rem !important;
+  }
+}
+.fifth-modal-body .modal-edit-wrapper .form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.fifth-modal-body .modal-edit-wrapper .form .main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.fifth-modal-body .modal-edit-wrapper .form .main fieldset {
+  border-radius: 0.3rem;
+}
+.fifth-modal-body .modal-edit-wrapper .form .main fieldset legend {
+  font-size: 0.75rem;
+  margin-bottom: 0 !important;
+}
+@media (max-width: 575px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main fieldset legend {
+    font-size: 0.7rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main fieldset legend {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main fieldset legend {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main fieldset legend {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main fieldset legend {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main fieldset legend {
+    font-size: 0.9rem !important;
+  }
+}
+.fifth-modal-body .modal-edit-wrapper .form .main fieldset select {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 0.8rem;
+}
+@media (max-width: 575px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main fieldset select {
+    font-size: 0.75rem !important;
+    padding: 0.4rem 0.8rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main fieldset select {
+    font-size: 0.8rem !important;
+    padding: 0.4rem 0.8rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main fieldset select {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main fieldset select {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main fieldset select {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main fieldset select {
+    font-size: 0.95rem !important;
+  }
+}
+.fifth-modal-body .modal-edit-wrapper .form .main .first {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+  border-bottom: 1px solid rgba(32, 32, 32, 0.3843137255);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.fifth-modal-body .modal-edit-wrapper .form .main .first h6 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem !important;
+}
+@media (max-width: 575px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 0.95rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 1.05rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 1.1rem !important;
+  }
+}
+.fifth-modal-body .modal-edit-wrapper .form .main .first .check {
+  display: none;
+}
+.fifth-modal-body .modal-edit-wrapper .form .main .first .check span {
+  font-size: 0.75rem;
+}
+@media (max-width: 575px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.9rem !important;
+  }
+}
+.fifth-modal-body .modal-edit-wrapper .form .main .first .select-wrapper {
+  width: 100%;
+}
+.fifth-modal-body .modal-edit-wrapper .form .main .first .select-wrapper div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.fifth-modal-body .modal-edit-wrapper .form .main .first fieldset {
+  width: 30%;
+}
+.fifth-modal-body .modal-edit-wrapper .form .main .second {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+  border-bottom: 1px solid rgba(32, 32, 32, 0.3843137255);
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+.fifth-modal-body .modal-edit-wrapper .form .main .second h6 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem !important;
+}
+@media (max-width: 575px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main .second h6 {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main .second h6 {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main .second h6 {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main .second h6 {
+    font-size: 0.95rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main .second h6 {
+    font-size: 1.05rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main .second h6 {
+    font-size: 1.1rem !important;
+  }
+}
+.fifth-modal-body .modal-edit-wrapper .form .main .second .check {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.fifth-modal-body .modal-edit-wrapper .form .main .second .check span {
+  font-size: 0.75rem;
+}
+@media (max-width: 575px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main .second .check span {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main .second .check span {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main .second .check span {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main .second .check span {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main .second .check span {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main .second .check span {
+    font-size: 0.9rem !important;
+  }
+}
+.fifth-modal-body .modal-edit-wrapper .form .main .second .select-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+}
+.fifth-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.fifth-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend {
+  margin-bottom: 0 !important;
+}
+@media (max-width: 575px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend {
+    font-size: 0.65rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend {
+    font-size: 0.7rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend {
+    font-size: 0.7rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend {
+    font-size: 0.85rem !important;
+  }
+}
+.fifth-modal-body .modal-edit-wrapper .form .main .second fieldset {
+  width: 30%;
+}
+@media (max-width: 575px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.6rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.72rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.9rem !important;
+  }
+}
+.fifth-modal-body .modal-edit-wrapper .form .main button {
+  margin-top: 0.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  font-size: 0.75rem;
+  padding: 0.85rem 1rem !important;
+  border-radius: 0.3rem !important;
+  background-color: #005BC1;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+@media (max-width: 575px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main button {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main button {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main button {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main button {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main button {
+    font-size: 0.95rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .fifth-modal-body .modal-edit-wrapper .form .main button {
+    font-size: 1rem !important;
+  }
+}
+.fifth-modal-body .modal-edit-wrapper .form .main button:hover {
+  background-color: #0067db;
+  color: #fff;
+}
+
+.sixth-modal-title {
+  font-size: 1rem !important;
+}
+@media (max-width: 575px) {
+  .sixth-modal-title {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .sixth-modal-title {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .sixth-modal-title {
+    font-size: 1rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .sixth-modal-title {
+    font-size: 1.05rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .sixth-modal-title {
+    font-size: 1.2rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .sixth-modal-title {
+    font-size: 1.3rem !important;
+  }
+}
+
+.sixth-modal-body .modal-edit-wrapper {
+  padding: 1.5rem 2rem !important;
+}
+@media (max-width: 575px) {
+  .sixth-modal-body .modal-edit-wrapper {
+    padding: 1rem 1rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .sixth-modal-body .modal-edit-wrapper {
+    padding: 1rem 1.5rem !important;
+  }
+}
+.sixth-modal-body .modal-edit-wrapper .form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sixth-modal-body .modal-edit-wrapper .form .main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.sixth-modal-body .modal-edit-wrapper .form .main fieldset {
+  border-radius: 0.3rem;
+}
+.sixth-modal-body .modal-edit-wrapper .form .main fieldset legend {
+  font-size: 0.75rem;
+  margin-bottom: 0 !important;
+}
+@media (max-width: 575px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main fieldset legend {
+    font-size: 0.7rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main fieldset legend {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main fieldset legend {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main fieldset legend {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main fieldset legend {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main fieldset legend {
+    font-size: 0.9rem !important;
+  }
+}
+.sixth-modal-body .modal-edit-wrapper .form .main fieldset select {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 0.8rem;
+}
+@media (max-width: 575px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main fieldset select {
+    font-size: 0.75rem !important;
+    padding: 0.4rem 0.8rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main fieldset select {
+    font-size: 0.8rem !important;
+    padding: 0.4rem 0.8rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main fieldset select {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main fieldset select {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main fieldset select {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main fieldset select {
+    font-size: 0.95rem !important;
+  }
+}
+.sixth-modal-body .modal-edit-wrapper .form .main .first {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+  border-bottom: 1px solid rgba(32, 32, 32, 0.3843137255);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.sixth-modal-body .modal-edit-wrapper .form .main .first h6 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem !important;
+}
+@media (max-width: 575px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 0.95rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 1.05rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main .first h6 {
+    font-size: 1.1rem !important;
+  }
+}
+.sixth-modal-body .modal-edit-wrapper .form .main .first .check {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.sixth-modal-body .modal-edit-wrapper .form .main .first .check span {
+  font-size: 0.75rem;
+}
+@media (max-width: 575px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main .first .check span {
+    font-size: 0.9rem !important;
+  }
+}
+.sixth-modal-body .modal-edit-wrapper .form .main .first .select-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+.sixth-modal-body .modal-edit-wrapper .form .main .first .select-wrapper div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.sixth-modal-body .modal-edit-wrapper .form .main .first fieldset {
+  width: 30%;
+}
+.sixth-modal-body .modal-edit-wrapper .form .main .second {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+  border-bottom: 1px solid rgba(32, 32, 32, 0.3843137255);
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+.sixth-modal-body .modal-edit-wrapper .form .main .second h6 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem !important;
+}
+@media (max-width: 575px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main .second h6 {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main .second h6 {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main .second h6 {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main .second h6 {
+    font-size: 0.95rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main .second h6 {
+    font-size: 1.05rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main .second h6 {
+    font-size: 1.1rem !important;
+  }
+}
+.sixth-modal-body .modal-edit-wrapper .form .main .second .check {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.sixth-modal-body .modal-edit-wrapper .form .main .second .check span {
+  font-size: 0.75rem;
+}
+@media (max-width: 575px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main .second .check span {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main .second .check span {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main .second .check span {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main .second .check span {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main .second .check span {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main .second .check span {
+    font-size: 0.9rem !important;
+  }
+}
+.sixth-modal-body .modal-edit-wrapper .form .main .second .select-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+}
+.sixth-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.sixth-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend {
+  margin-bottom: 0 !important;
+}
+@media (max-width: 575px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend {
+    font-size: 0.65rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend {
+    font-size: 0.7rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend {
+    font-size: 0.7rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main .second .select-wrapper div legend {
+    font-size: 0.85rem !important;
+  }
+}
+.sixth-modal-body .modal-edit-wrapper .form .main .second fieldset {
+  width: 30%;
+}
+@media (max-width: 575px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.6rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.72rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main span {
+    font-size: 0.9rem !important;
+  }
+}
+.sixth-modal-body .modal-edit-wrapper .form .main button {
+  margin-top: 0.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  font-size: 0.75rem;
+  padding: 0.85rem 1rem !important;
+  border-radius: 0.3rem !important;
+  background-color: #005BC1;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+@media (max-width: 575px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main button {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main button {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main button {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main button {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main button {
+    font-size: 0.95rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .sixth-modal-body .modal-edit-wrapper .form .main button {
+    font-size: 1rem !important;
+  }
+}
+.sixth-modal-body .modal-edit-wrapper .form .main button:hover {
+  background-color: #0067db;
+  color: #fff;
+}
+
 .daily-report__container {
   width: 100%;
 }

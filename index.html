@@ -509,8 +509,49 @@
                         <td><select name="" id="">
                           <option value="">-斤</option>
                         </select></td>
-                        <td><select name="" id="">
-                          <option value="">雙層B+B禮盒</option>
+                        <td><select name="" id="" onchange="openModals()">
+                          <option value="option1">三斤狀元囍餅</option>
+                          <option value="option2">二斤狀元囍餅</option>
+                          <option value="option3">一斤狀元囍餅</option>
+                          <option value="option4">一斤核桃囍餅</option>
+                          <option value="option5">一斤素食囍餅</option>
+                          <option value="option6">一斤鳯梨囍餅</option>
+                          <option value="option7">一斤鳯凰酥囍餅</option>
+                          <option value="option8">一斤鳯梅酥囍餅</option>
+                          <option value="option9">一斤鳯椰果酥囍餅</option>
+                          <option value="option10">一斤紅豆麻糬囍餅</option>
+                          <option value="option11">一斤芋頭麻糬囍餅</option>
+                          <option value="option12">一斤綠茶麻糬囍餅</option>
+                          <option value="option13">一斤山藥麻糬囍餅</option>
+                          <option value="option14">一斤黑芝麻囍餅</option>
+                          <option value="option15">一斤黑芝麻麻糬囍餅</option>
+                          <option value="option16">一斤黑糖麻糬囍餅</option>
+                          <option value="option17">一斤咖啡麻糬囍餅</option>
+                          <option value="option18">一斤冬瓜肉囍餅</option>
+                          <option value="option19">一斤魯肉豆沙囍餅</option>
+                          <option value="option20">一斤咖哩魯肉囍餅</option>
+                          <option value="option21">一斤芝麻酥囍餅</option>
+                          <option value="option22">一斤狀元囍餅</option>
+                          <option value="option23">一斤狀元囍餅</option>
+                          <option value="option24">一斤狀元囍餅</option>
+                          <option value="option25">一斤核桃囍餅</option>
+                          <option value="option26">一斤素食囍餅</option>
+                          <option value="option27">一斤鳯梨囍餅</option>
+                          <option value="option28">一斤鳯凰酥囍餅</option>
+                          <option value="option29">一斤鳯梅酥囍餅</option>
+                          <option value="option30">一斤鳯椰果酥囍餅</option>
+                          <option value="option31">一斤紅豆麻糬囍餅</option>
+                          <option value="option32">一斤芋頭麻糬囍餅</option>
+                          <option value="option33">一斤綠茶麻糬囍餅</option>
+                          <option value="option34">二斤鴛鴦禮盒</option>
+                          <option value="option35">三斤鴛鴦禮盒</option>
+                          <option value="option36">三斤六色禮盒 ＜方形＞	</option>
+                          <option value="option37">三斤六色禮盒 ＜心形＞	</option>
+                          <option value="option38">三斤六色禮盒 ＜方形長盒＞	</option>
+                          <option value="option39">三斤六色禮盒 ＜圓形＞	</option>
+                          <option value="option40">雙層 A+B 禮盒</option>
+                          <option value="option41">雙層雙 B 禮盒</option>
+                          <option value="option42">四斤六色禮盒</option>
                         </select></td>
                         <td><select name="" id="">
                           <option value="">葷</option>
@@ -525,7 +566,7 @@
                       
                     </table>
                     <!-- <button class="btn2" onclick="addNewBtn()"><i class="ri-add-line"></i><span>新增品項</span></button> -->
-                    <button class="btn2" data-bs-toggle="modal" data-bs-target="#modalNew"><i class="ri-add-line"></i><span>新增品項</span></button>
+                    <button class="btn2"><i class="ri-add-line"></i><span>新增品項</span></button>
                   </div>
 
 
@@ -540,6 +581,8 @@
     </div>
 
     
+
+
 
     <!-- Edit Modal Open Btn -->
     <script>
@@ -594,100 +637,798 @@
       }
     </script>
 
+    <!-- ----------------------------------- -->
 
 
 
 
 
 
-    <!-- 2nd Edit Modal -->
-    <div
-      class="modal fade"
-      id="modalNew"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true" id="staticBackdrop" data-bs-backdrop="static"
-    >
-      <div class="modal-dialog modal-md modal-lg modal-xl modal-dialog-centered modal-sec">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="second-order-modal-title" id="exampleModalLabel">
-              新增使用者
-            </h1>
-            <button
-              type="button" onclick="closeBtnTwo()"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="second-order-modal-body">
-            <div class="modal-edit-wrapper">
+     <!-- Modal 1 -->
+     <div
+     class="modal fade"
+     id="modal1"
+     tabindex="-1"
+     aria-labelledby="exampleModalLabel"
+     aria-hidden="true" data-bs-backdrop="static"
+   >
+     <div class="modal-dialog modal modal-dialog-centered">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h1 class="first-modal-title" id="exampleModalLabel">
+            選擇六色禮盒內容
+           </h1>
+           <button onclick="closeModals()"
+             type="button"
+             class="btn-close"
+             data-bs-dismiss="modal"
+             aria-label="Close"
+           ></button>
+         </div>
+         <div class="first-modal-body">
+           <div class="modal-edit-wrapper">
 
-              <form class="form">
+             <form class="form">
 
-                <div class="main">
-                  <div class="first">
+               <div class="main">
+                 <div class="first">
+                  <h6></h6>
+                  <label class="check"><input type="checkbox" name="" id=""><span>全部同選項</span></label>
+                  <div class="select-wrapper">
+                    <div>
+                      <fieldset class="border">
+                        <legend class="float-none w-auto px-2">禮盒形狀</legend>
+                        <!-- <div> -->
+                          <select name="" id="">
+                            <option value="">長方形</option>
+                          </select>
+                        <!-- </div> -->
+                      </fieldset>
+                      <fieldset class="border">
+                        <legend class="float-none w-auto px-2">品項大小</legend>
+                        <!-- <div> -->
+                          <select name="" id="">
+                            <option value="">四斤</option>
+                          </select>
+                        <!-- </div> -->
+                      </fieldset>
+                    </div>
+                  </div>
+                 </div>
+
+                 <div class="second">
+                  <h6></h6>
+                  <label class="check"><input type="checkbox" name="" id=""><span>全部同選項</span></label>
+                  <div class="select-wrapper">
+                    <div>
+                      <fieldset class="border">
+                        <legend class="float-none w-auto px-2">1</legend>
+                        <!-- <div> -->
+                          <select name="" id="">
+                            <option value="">招牌</option>
+                          </select>
+                        <!-- </div> -->
+                      </fieldset>
+                      <fieldset class="border">
+                        <legend class="float-none w-auto px-2">2</legend>
+                        <!-- <div> -->
+                          <select name="" id="">
+                            <option value="">招牌</option>
+                          </select>
+                        <!-- </div> -->
+                      </fieldset>
+                      <fieldset class="border">
+                        <legend class="float-none w-auto px-2">3</legend>
+                        <!-- <div> -->
+                          <select name="" id="">
+                            <option value="">招牌</option>
+                          </select>
+                        <!-- </div> -->
+                      </fieldset>
+                    </div>
+                    <div>
+                      <fieldset class="border">
+                        <legend class="float-none w-auto px-2">4</legend>
+                        <!-- <div> -->
+                          <select name="" id="">
+                            <option value="">招牌</option>
+                          </select>
+                        <!-- </div> -->
+                      </fieldset>
+                      <fieldset class="border">
+                        <legend class="float-none w-auto px-2">5</legend>
+                        <!-- <div> -->
+                          <select name="" id="">
+                            <option value="">招牌</option>
+                          </select>
+                        <!-- </div> -->
+                      </fieldset>
+                      <fieldset class="border">
+                        <legend class="float-none w-auto px-2">6</legend>
+                        <!-- <div> -->
+                          <select name="" id="">
+                            <option value="">招牌</option>
+                          </select>
+                        <!-- </div> -->
+                      </fieldset>
+                    </div>
+                  </div>
+                 </div>
+
+                 <span>餅盒排放，在出廠時會略做調整。</span>
+
+                 <button><span>確定</span></button>
+
+
+               </div>
+             
+             </form>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+
+
+
+   <!-- Modal 2 -->
+   <div
+   class="modal fade"
+   id="modal2"
+   tabindex="-1"
+   aria-labelledby="exampleModalLabel"
+   aria-hidden="true" data-bs-backdrop="static"
+ >
+   <div class="modal-dialog modal modal-dialog-centered">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h1 class="second-modal-title" id="exampleModalLabel">
+          選擇六色禮盒內容
+        </h1>
+         <button onclick="closeModals()"
+           type="button"
+           class="btn-close"
+           data-bs-dismiss="modal"
+           aria-label="Close"
+         ></button>
+       </div>
+       <div class="second-modal-body">
+         <div class="modal-edit-wrapper">
+
+           <form class="form">
+
+             <div class="main">
+               <div class="first">
+                <h6></h6>
+                <label class="check"><input type="checkbox" name="" id=""><span>全部同選項</span></label>
+                <div class="select-wrapper">
+                  <div>
                     <fieldset class="border">
-                      <legend class="float-none w-auto px-1">使用者名稱</legend>
-                      <!-- <div> -->
-                        <input type="text">
-                      <!-- </div> -->
-                    </fieldset>
-                    <fieldset class="border">
-                      <legend class="float-none w-auto px-1">使用者所屬群組</legend>
+                      <legend class="float-none w-auto px-2">禮盒形狀</legend>
                       <!-- <div> -->
                         <select name="" id="">
-                          <option value="">使用者</option>
+                          <option value="">心形</option>
                         </select>
                       <!-- </div> -->
                     </fieldset>
                   </div>
-
-                  <div class="second">
-                    <fieldset class="border">
-                      <legend class="float-none w-auto px-1">使用者</legend>
-                      <!-- <div> -->
-                        <input type="email">
-                      <!-- </div> -->
-                    </fieldset>
-                  </div>
-
-                  <div class="third">
-                    <fieldset class="border">
-                      <legend class="float-none w-auto px-1">使用者密碼</legend>
-                      <!-- <div> -->
-                        <input type="text">
-                      <!-- </div> -->
-                    </fieldset>
-                  </div>
-
-                  <button><span>確定新增</span></button>
-
-
                 </div>
-              
-              </form>
-            </div>
+               </div>
+
+               <div class="second">
+                <h6></h6>
+                <label class="check"><input type="checkbox" name="" id=""><span>全部同選項</span></label>
+                <div class="select-wrapper">
+                  <div>
+                    <fieldset class="border">
+                      <legend class="float-none w-auto px-2">1</legend>
+                      <!-- <div> -->
+                        <select name="" id="">
+                          <option value="">招牌</option>
+                        </select>
+                      <!-- </div> -->
+                    </fieldset>
+                    <fieldset class="border">
+                      <legend class="float-none w-auto px-2">3</legend>
+                      <!-- <div> -->
+                        <select name="" id="">
+                          <option value="">招牌</option>
+                        </select>
+                      <!-- </div> -->
+                    </fieldset>
+                    <fieldset class="border">
+                      <legend class="float-none w-auto px-2">5</legend>
+                      <!-- <div> -->
+                        <select name="" id="">
+                          <option value="">招牌</option>
+                        </select>
+                      <!-- </div> -->
+                    </fieldset>
+                  </div>
+                  <div>
+                    <fieldset class="border">
+                      <legend class="float-none w-auto px-2">2</legend>
+                      <!-- <div> -->
+                        <select name="" id="">
+                          <option value="">招牌</option>
+                        </select>
+                      <!-- </div> -->
+                    </fieldset>
+                    <fieldset class="border">
+                      <legend class="float-none w-auto px-2">4</legend>
+                      <!-- <div> -->
+                        <select name="" id="">
+                          <option value="">招牌</option>
+                        </select>
+                      <!-- </div> -->
+                    </fieldset>
+                    <fieldset class="border">
+                      <legend class="float-none w-auto px-2">6</legend>
+                      <!-- <div> -->
+                        <select name="" id="">
+                          <option value="">招牌</option>
+                        </select>
+                      <!-- </div> -->
+                    </fieldset>
+                  </div>
+                </div>
+               </div>
+
+               <span>餅盒排放，在出廠時會略做調整。</span>
+
+               <button><span>確定</span></button>
+
+
+             </div>
+           
+           </form>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+
+
+
+    <!-- Modal 3 -->
+    <div
+    class="modal fade"
+    id="modal3"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true" data-bs-backdrop="static"
+  >
+    <div class="modal-dialog modal modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="third-modal-title" id="exampleModalLabel">
+           選擇六色禮盒內容
+         </h1>
+          <button onclick="closeModals()"
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="third-modal-body">
+          <div class="modal-edit-wrapper">
+ 
+            <form class="form">
+ 
+              <div class="main">
+                <div class="first">
+                 <h6></h6>
+                 <label class="check"><input type="checkbox" name="" id=""><span>全部同選項</span></label>
+                 <div class="select-wrapper">
+                   <div>
+                     <fieldset class="border">
+                       <legend class="float-none w-auto px-2">禮盒形狀</legend>
+                       <!-- <div> -->
+                         <select name="" id="">
+                           <option value="">心形</option>
+                         </select>
+                       <!-- </div> -->
+                     </fieldset>
+                   </div>
+                 </div>
+                </div>
+ 
+                <div class="second">
+                 <h6></h6>
+                 <label class="check"><input type="checkbox" name="" id=""><span>全部同選項</span></label>
+                 <div class="select-wrapper">
+                   <div>
+                     <fieldset class="border">
+                       <legend class="float-none w-auto px-2">1</legend>
+                       <!-- <div> -->
+                         <select name="" id="">
+                           <option value="">招牌</option>
+                         </select>
+                       <!-- </div> -->
+                     </fieldset>
+                     <fieldset class="border">
+                       <legend class="float-none w-auto px-2">3</legend>
+                       <!-- <div> -->
+                         <select name="" id="">
+                           <option value="">招牌</option>
+                         </select>
+                       <!-- </div> -->
+                     </fieldset>
+                     <fieldset class="border">
+                       <legend class="float-none w-auto px-2">5</legend>
+                       <!-- <div> -->
+                         <select name="" id="">
+                           <option value="">招牌</option>
+                         </select>
+                       <!-- </div> -->
+                     </fieldset>
+                   </div>
+                   <div class="d-flex flex-column">
+                    <span class="fw-bold">中間</span>
+                    <span>花生芝麻糖</span>
+                   </div>
+                   <div>
+                     <fieldset class="border">
+                       <legend class="float-none w-auto px-2">2</legend>
+                       <!-- <div> -->
+                         <select name="" id="">
+                           <option value="">招牌</option>
+                         </select>
+                       <!-- </div> -->
+                     </fieldset>
+                     <fieldset class="border">
+                       <legend class="float-none w-auto px-2">4</legend>
+                       <!-- <div> -->
+                         <select name="" id="">
+                           <option value="">招牌</option>
+                         </select>
+                       <!-- </div> -->
+                     </fieldset>
+                     <fieldset class="border">
+                       <legend class="float-none w-auto px-2">6</legend>
+                       <!-- <div> -->
+                         <select name="" id="">
+                           <option value="">招牌</option>
+                         </select>
+                       <!-- </div> -->
+                     </fieldset>
+                   </div>
+                 </div>
+                </div>
+ 
+                <span>餅盒排放，在出廠時會略做調整。</span>
+ 
+                <button><span>確定</span></button>
+ 
+ 
+              </div>
+            
+            </form>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    
 
-    <!-- 2nd Edit Modal Open Btn -->
+
+
+  <!-- Modal 4 -->
+  <div
+  class="modal fade"
+  id="modal4"
+  tabindex="-1"
+  aria-labelledby="exampleModal4"
+  aria-hidden="true" data-bs-backdrop="static"
+>
+  <div class="modal-dialog modal modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="fourth-modal-title" id="exampleModal4">
+         選擇六色禮盒內容
+        </h1>
+        <button onclick="closeModals()"
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="fourth-modal-body">
+        <div class="modal-edit-wrapper">
+
+          <form class="form">
+
+            <div class="main">
+              <div class="first">
+               <h6></h6>
+               <label class="check"><input type="checkbox" name="" id=""><span>全部同選項</span></label>
+               <div class="select-wrapper">
+                 <div>
+                   <fieldset class="border">
+                     <legend class="float-none w-auto px-2">1</legend>
+                     <!-- <div> -->
+                       <select name="" id="">
+                         <option value="">狀元</option>
+                       </select>
+                     <!-- </div> -->
+                   </fieldset>
+                   <fieldset class="border">
+                     <legend class="float-none w-auto px-2">2</legend>
+                     <!-- <div> -->
+                       <select name="" id="">
+                         <option value="">狀元</option>
+                       </select>
+                     <!-- </div> -->
+                   </fieldset>
+                 </div>
+               </div>
+              </div>
+
+              <span>餅盒排放，在出廠時會略做調整。</span>
+
+              <button><span>確定</span></button>
+
+
+            </div>
+          
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Modal 5 -->
+<div
+class="modal fade"
+id="modal5"
+tabindex="-1"
+aria-labelledby="exampleModalLabel"
+aria-hidden="true" data-bs-backdrop="static"
+>
+<div class="modal-dialog modal modal-dialog-centered">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h1 class="fifth-modal-title" id="exampleModalLabel">
+       選擇雙層A+B禮盒內容
+     </h1>
+      <button onclick="closeModals()"
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="fifth-modal-body">
+      <div class="modal-edit-wrapper">
+
+        <form class="form">
+
+          <div class="main">
+            <div class="first">
+             <h6>A層</h6>
+             <label class="check"><input type="checkbox" name="" id=""><span>全部同選項</span></label>
+             <div class="select-wrapper">
+               <div>
+                 <fieldset class="border">
+                   <legend class="float-none w-auto px-2">1.5斤大餅</legend>
+                   <!-- <div> -->
+                     <select name="" id="">
+                       <option value="">狀元餅</option>
+                     </select>
+                   <!-- </div> -->
+                 </fieldset>
+               </div>
+             </div>
+            </div>
+
+            <div class="second">
+             <h6>B層</h6>
+             <label class="check"><input type="checkbox" name="" id=""><span>全部同選項</span></label>
+             <div class="select-wrapper">
+               <div>
+                 <fieldset class="border">
+                   <legend class="float-none w-auto px-2">小餅1</legend>
+                   <!-- <div> -->
+                     <select name="" id="">
+                       <option value="">招牌</option>
+                     </select>
+                   <!-- </div> -->
+                 </fieldset>
+                 <fieldset class="border">
+                   <legend class="float-none w-auto px-2">小餅2</legend>
+                   <!-- <div> -->
+                     <select name="" id="">
+                       <option value="">招牌</option>
+                     </select>
+                   <!-- </div> -->
+                 </fieldset>
+               </div>
+               <div>
+                <fieldset class="border">
+                  <legend class="float-none w-auto px-2">小餅3</legend>
+                  <!-- <div> -->
+                    <select name="" id="">
+                      <option value="">招牌</option>
+                    </select>
+                  <!-- </div> -->
+                </fieldset>
+                <fieldset class="border">
+                  <legend class="float-none w-auto px-2">小餅4</legend>
+                  <!-- <div> -->
+                    <select name="" id="">
+                      <option value="">招牌</option>
+                    </select>
+                  <!-- </div> -->
+                </fieldset>
+               </div>
+             </div>
+            </div>
+
+            <span>餅盒排放，在出廠時會略做調整。</span>
+
+            <button><span>確定</span></button>
+
+
+          </div>
+        
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+<!-- Modal 6 -->
+<div
+class="modal fade"
+id="modal6"
+tabindex="-1"
+aria-labelledby="exampleModalLabel"
+aria-hidden="true" data-bs-backdrop="static"
+>
+<div class="modal-dialog modal modal-dialog-centered">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h1 class="sixth-modal-title" id="exampleModalLabel">
+        選擇雙層B+B禮盒內容
+     </h1>
+      <button onclick="closeModals()"
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="sixth-modal-body">
+      <div class="modal-edit-wrapper">
+
+        <form class="form">
+
+          <div class="main">
+            <div class="first">
+             <h6>上層</h6>
+             <label class="check"><input type="checkbox" name="" id=""><span>全部同選項</span></label>
+             <div class="select-wrapper">
+               <div>
+                 <fieldset class="border">
+                   <legend class="float-none w-auto px-2">小餅1</legend>
+                   <!-- <div> -->
+                     <select name="" id="">
+                       <option value="">招牌</option>
+                     </select>
+                   <!-- </div> -->
+                 </fieldset>
+                 <fieldset class="border">
+                  <legend class="float-none w-auto px-2">小餅2</legend>
+                  <!-- <div> -->
+                    <select name="" id="">
+                      <option value="">招牌</option>
+                    </select>
+                  <!-- </div> -->
+                </fieldset>
+               </div>
+               <div>
+                <fieldset class="border">
+                  <legend class="float-none w-auto px-2">小餅3</legend>
+                  <!-- <div> -->
+                    <select name="" id="">
+                      <option value="">招牌</option>
+                    </select>
+                  <!-- </div> -->
+                </fieldset>
+                <fieldset class="border">
+                 <legend class="float-none w-auto px-2">小餅4</legend>
+                 <!-- <div> -->
+                   <select name="" id="">
+                     <option value="">招牌</option>
+                   </select>
+                 <!-- </div> -->
+               </fieldset>
+              </div>
+             </div>
+            </div>
+
+            <div class="second">
+             <h6>下層</h6>
+             <label class="check"><input type="checkbox" name="" id=""><span>全部同選項</span></label>
+             <div class="select-wrapper">
+               <div>
+                 <fieldset class="border">
+                   <legend class="float-none w-auto px-2">小餅5</legend>
+                   <!-- <div> -->
+                     <select name="" id="">
+                       <option value="">招牌</option>
+                     </select>
+                   <!-- </div> -->
+                 </fieldset>
+                 <fieldset class="border">
+                   <legend class="float-none w-auto px-2">小餅6</legend>
+                   <!-- <div> -->
+                     <select name="" id="">
+                       <option value="">招牌</option>
+                     </select>
+                   <!-- </div> -->
+                 </fieldset>
+               </div>
+               <div>
+                <fieldset class="border">
+                  <legend class="float-none w-auto px-2">小餅7</legend>
+                  <!-- <div> -->
+                    <select name="" id="">
+                      <option value="">招牌</option>
+                    </select>
+                  <!-- </div> -->
+                </fieldset>
+                <fieldset class="border">
+                  <legend class="float-none w-auto px-2">小餅8</legend>
+                  <!-- <div> -->
+                    <select name="" id="">
+                      <option value="">招牌</option>
+                    </select>
+                  <!-- </div> -->
+                </fieldset>
+               </div>
+             </div>
+            </div>
+
+            <span>餅盒排放，在出廠時會略做調整。</span>
+
+            <button><span>確定</span></button>
+
+
+          </div>
+        
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Open Modals -->
     <script>
-      function addNewBtn(index) {
-        $("#modalNew").modal("show");
+      function openModals(){
+        let selectedValue = event.target.value
+
+        if(selectedValue==="option38" || selectedValue==="option42"){
+          $("#modal1").modal("show")
+          console.log("modal1")
+        }
+
+        if(selectedValue==="option37"){
+          $("#modal2").modal("show")
+          console.log("modal2")
+        }
+
+        if(selectedValue==="option39"){
+          $("#modal3").modal("show")
+          console.log("modal3")
+        }
+
+        if(selectedValue==="option34" || selectedValue==="option35"){
+          $("#modal4").modal("show")
+          console.log("modal4")
+        }
+
+        if(selectedValue==="option40"){
+          $("#modal5").modal("show")
+          console.log("modal5")
+        }
+
+        if(selectedValue==="option41"){
+          $("#modal6").modal("show")
+          console.log("modal6")
+        }
+
       }
     </script>
 
+
+
+    <!-- Close All Modals -->
     <script>
-      function closeBtnTwo(index) {
-        $("#modalNew").modal("hide");
+      function closeModals(){
+        $("#modal1").modal("hide")
+        $("#modal2").modal("hide")
+        $("#modal3").modal("hide")
+        $("#modal4").modal("hide")
+        $("#modal5").modal("hide")
+        $("#modal6").modal("hide")
+
       }
     </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
