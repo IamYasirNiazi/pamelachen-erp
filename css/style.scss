@@ -1983,7 +1983,7 @@ a{
                             flex-wrap: wrap;                        
                         }
 
-                        input[type="text"]{
+                        fieldset{
                             @media (max-width: 575px){
                                 width: 45%;
                             }

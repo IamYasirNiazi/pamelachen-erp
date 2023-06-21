@@ -1868,12 +1868,12 @@ a {
   }
 }
 @media (max-width: 575px) {
-  .order-modal-body .modal-edit-wrapper .form .main .right .fourth input[type=text] {
+  .order-modal-body .modal-edit-wrapper .form .main .right .fourth fieldset {
     width: 45%;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .order-modal-body .modal-edit-wrapper .form .main .right .fourth input[type=text] {
+  .order-modal-body .modal-edit-wrapper .form .main .right .fourth fieldset {
     width: 45%;
   }
 }
