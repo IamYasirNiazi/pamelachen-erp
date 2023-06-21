@@ -283,6 +283,7 @@ a {
 @media (max-width: 575px) {
   .login__container__row__col__main-wrapper {
     padding: 3rem 3.5rem !important;
+    width: 100% !important;
   }
 }
 .login__container__row__col__main-wrapper h3 {
