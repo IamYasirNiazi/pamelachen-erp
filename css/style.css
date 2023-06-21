@@ -1862,7 +1862,7 @@ a {
   gap: 1rem;
   width: 100%;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .order-modal-body .modal-edit-wrapper .form .main .right .fourth {
     flex-wrap: wrap;
   }
@@ -1872,16 +1872,26 @@ a {
 }
 @media (max-width: 575px) {
   .order-modal-body .modal-edit-wrapper .form .main .right .fourth .select-box {
-    width: 60%;
+    width: 45%;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .order-modal-body .modal-edit-wrapper .form .main .right .fourth .select-box {
-    width: 55%;
+    width: 45%;
   }
 }
 .order-modal-body .modal-edit-wrapper .form .main .right .fourth .field1 {
   width: 60%;
+}
+@media (max-width: 575px) {
+  .order-modal-body .modal-edit-wrapper .form .main .right .fourth .field1 {
+    width: 45%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .order-modal-body .modal-edit-wrapper .form .main .right .fourth .field1 {
+    width: 45%;
+  }
 }
 .order-modal-body .modal-edit-wrapper .form .main .right .fifth {
   display: flex;
