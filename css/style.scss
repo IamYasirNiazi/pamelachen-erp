@@ -43,7 +43,7 @@ $theme-colors: (
         content: '';
         top: 1.85rem;
         right: .7rem;
-        background: url(../images/calendar.svg);
+        background: url(../images/calendar.svg) !important;
         background-repeat: no-repeat;
         width: .85rem;
         height: .85rem;
@@ -112,12 +112,12 @@ input[type="date"]:focus{
 //   }
 
   .modal-dialog {
-    overflow-y: auto;
+    overflow-y: auto !important;
   }
 
   
   .modal-open {
-    overflow: hidden;
+    overflow: hidden !important;
   }
 
   
@@ -2026,17 +2026,17 @@ a{
                         gap: 1rem;
                         width: 100%;
 
-                        @media (max-width: 575px){
-                            flex-wrap: wrap; 
+                        // @media (max-width: 575px){
+                            // flex-wrap: wrap; 
 
-                            fieldset{
-                                width: 47%;
-                            }
+                        //     fieldset{
+                        //         width: 47%;
+                        //     }
 
-                        }
+                        // }
     
                         fieldset{
-                            // width: 50%;
+                            width: 100%;
                         }
                     }
     
