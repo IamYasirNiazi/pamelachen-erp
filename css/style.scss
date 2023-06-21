@@ -60,7 +60,7 @@ $theme-colors: (
 .date::before{
     @media (max-width:767px) {
         color: #292929;
-        content: attr(placeholder);
+        // content: attr(placeholder);
     }
 }
 
