@@ -72,6 +72,14 @@
   z-index: 1061 !important;
 }
 
+.modal-dialog {
+  overflow-y: auto;
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
 body {
   font-family: "Poppins", sans-serif !important;
   -webkit-font-smoothing: antialiased;
@@ -1902,6 +1910,14 @@ a {
   align-items: center;
   gap: 1rem;
   width: 100%;
+}
+@media (max-width: 575px) {
+  .order-modal-body .modal-edit-wrapper .form .main .right .third {
+    flex-wrap: wrap;
+  }
+  .order-modal-body .modal-edit-wrapper .form .main .right .third fieldset {
+    width: 47%;
+  }
 }
 .order-modal-body .modal-edit-wrapper .form .main .right .fourth {
   display: flex;
