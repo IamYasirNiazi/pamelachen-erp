@@ -48,11 +48,11 @@ $theme-colors: (
         color: #292929;
         content: '';
         top: 1.7rem;
-        right: 1rem;
+        right: .8rem;
         background: url(../images/calendar.svg);
         background-repeat: no-repeat;
-        width: .95rem;
-        height: .95rem;
+        width: .85rem;
+        height: .85rem;
     }
 }
 
@@ -60,7 +60,7 @@ $theme-colors: (
 input[type="date"]::before{
     @media (max-width:767px) {
         color: #292929;
-        content: attr(placeholder);
+        // content: attr(placeholder);
     }
 }
 

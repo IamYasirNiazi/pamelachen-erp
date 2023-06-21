@@ -21,18 +21,17 @@
     color: #292929;
     content: "";
     top: 1.7rem;
-    right: 1rem;
+    right: 0.8rem;
     background: url(../images/calendar.svg);
     background-repeat: no-repeat;
-    width: 0.95rem;
-    height: 0.95rem;
+    width: 0.85rem;
+    height: 0.85rem;
   }
 }
 
 @media (max-width: 767px) {
   input[type=date]::before {
     color: #292929;
-    content: attr(placeholder);
   }
 }
 
