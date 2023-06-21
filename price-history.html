@@ -28,7 +28,7 @@
       <div class="price-history__container">
         <div class="price-history__container__row" id="row">
 
-          <div class="price-history__container__row__col1 column1">
+          <div class="price-history__container__row__col1 column1" id="nav_mobile">
             <div class="price-history__container__row__col1__wrapper wrapper">
               
               <div class="hamburger" id="hamburger">
@@ -70,8 +70,13 @@
           <div class="price-history__container__row__col2 column2">
             <div class="price-history__container__row__col2__wrapper">
               <div class="price-history__container__row__col2__wrapper__top-bar">
+                <div class="hamburger" id="hamburger-mobile">
+                  <i class="ri-menu-line hamburger-icon"></i>
+                </div>
                 <h5 class="title">調價紀錄</h5>
                 <!-- <div class="search"><input type="text" placeholder="搜尋統一編號或客戶名稱"><i class="ri-search-line"></i></div> -->
+                <div class="history" id="history"><i class="ri-history-fill"></i></div>
+
               </div>
               <div class="price-history__container__row__col2__wrapper__main">
                 
@@ -104,52 +109,22 @@
                   </div>
 
                 </div>
-                <div class="table">
-                  <table>
 
-                    <tr>
-                        <th>品項編號</th>
-                        <th>品項大小</th>
-                        <th>品項名稱</th>
-                        <th>品項口味</th>
-                        <th>禮盒內容</th>
-                        <th>原始價格</th>
-                        <th>調後價格</th>
-                        <th>調幅%</th>  
-                        <th></th>  
-                        <th></th>  
-                    </tr>
-                    <tr>
-                      <td>101-01</td>
-                      <td><select name="" id="">
-                        <option value="">一斤</option>
-                      </select></td>
-                      <td>狀元囍餅</td>
-                      <td><select name="" id="">
-                        <option value="">葷</option>
-                      </select></td>
-                      <td>招，招，招，招，招，招</td>
-                      <td>140</td>
-                      <td>140</td>
-                      <td>5%</td>
-                      <td><i class="ri-pencil-line"></i></td>
-                      <td><i class="ri-loop-left-line"></i></td>
-                    </tr>
-                    <tr>
-                        <td>101-01</td>
-                        <td><select name="" id="">
-                          <option value="">一斤</option>
-                        </select></td>
-                        <td>狀元囍餅</td>
-                        <td><select name="" id="">
-                          <option value="">葷</option>
-                        </select></td>
-                        <td>招，招，招，招，招，招</td>
-                        <td>140</td>
-                        <td>140</td>
-                        <td>5%</td>
-                        <td><i class="ri-pencil-line"></i></td>
-                        <td><i class="ri-loop-left-line"></i></td>
+                <div class="main-wrapper">
+                  <div class="table">
+                    <table>
+  
+                      <tr>
+                          <th>品項編號</th>
+                          <th>品項大小</th>
+                          <th>品項名稱</th>
+                          <th>品項口味</th>
+                          <th>禮盒內容</th>
+                          <th>原始價格</th>
+                          <th>調後價格</th>
+                          <th>調幅%</th>  
+                          <th></th>  
+                          <th></th>  
                       </tr>
                       <tr>
                         <td>101-01</td>
@@ -168,39 +143,166 @@
                         <td><i class="ri-loop-left-line"></i></td>
                       </tr>
                       <tr>
-                        <td>101-01</td>
-                        <td><select name="" id="">
-                          <option value="">一斤</option>
-                        </select></td>
-                        <td>狀元囍餅</td>
-                        <td><select name="" id="">
-                          <option value="">葷</option>
-                        </select></td>
-                        <td>招，招，招，招，招，招</td>
-                        <td>140</td>
-                        <td>140</td>
-                        <td>5%</td>
-                        <td><i class="ri-pencil-line"></i></td>
-                        <td><i class="ri-loop-left-line"></i></td>
+                          <td>101-01</td>
+                          <td><select name="" id="">
+                            <option value="">一斤</option>
+                          </select></td>
+                          <td>狀元囍餅</td>
+                          <td><select name="" id="">
+                            <option value="">葷</option>
+                          </select></td>
+                          <td>招，招，招，招，招，招</td>
+                          <td>140</td>
+                          <td>140</td>
+                          <td>5%</td>
+                          <td><i class="ri-pencil-line"></i></td>
+                          <td><i class="ri-loop-left-line"></i></td>
+                        </tr>
+                        <tr>
+                          <td>101-01</td>
+                          <td><select name="" id="">
+                            <option value="">一斤</option>
+                          </select></td>
+                          <td>狀元囍餅</td>
+                          <td><select name="" id="">
+                            <option value="">葷</option>
+                          </select></td>
+                          <td>招，招，招，招，招，招</td>
+                          <td>140</td>
+                          <td>140</td>
+                          <td>5%</td>
+                          <td><i class="ri-pencil-line"></i></td>
+                          <td><i class="ri-loop-left-line"></i></td>
+                        </tr>
+                        <tr>
+                          <td>101-01</td>
+                          <td><select name="" id="">
+                            <option value="">一斤</option>
+                          </select></td>
+                          <td>狀元囍餅</td>
+                          <td><select name="" id="">
+                            <option value="">葷</option>
+                          </select></td>
+                          <td>招，招，招，招，招，招</td>
+                          <td>140</td>
+                          <td>140</td>
+                          <td>5%</td>
+                          <td><i class="ri-pencil-line"></i></td>
+                          <td><i class="ri-loop-left-line"></i></td>
+                        </tr>
+                        <tr>
+                          <td>101-01</td>
+                          <td><select name="" id="">
+                            <option value="">一斤</option>
+                          </select></td>
+                          <td>狀元囍餅</td>
+                          <td><select name="" id="">
+                            <option value="">葷</option>
+                          </select></td>
+                          <td>招，招，招，招，招，招</td>
+                          <td>140</td>
+                          <td>140</td>
+                          <td>5%</td>
+                          <td><i class="ri-pencil-line"></i></td>
+                          <td><i class="ri-loop-left-line"></i></td>
+                        </tr>
+                      
+                    </table>
+                  </div>
+
+                  <div class="desc-sidebar">
+                    <h6>產品與訂購方式說明</h6>
+                    <div>
+                      <span>葷為葷食；素為素食；蛋為蛋奶素；部分產品、禮盒可訂購素食品，歡迎來電洽詢。</span>
+
+                      <span>訂購方式：電話訂購 / 網站下單後傳真，到貨日 / 取貨日前5天不可改。</span>
+                      
+                      <span>本島地區單一地址訂購金額滿4000元免運費,免货到付款手續費。</span>
+
+                      <span>未滿者加運費180元, 貨到付款者再加收手續費30元。※外島地區運費另計</span>
+
+                      <span>訂購電話: 05-7832346 / 05-7837886 傳真電話: 05-7827346</span>
+
+                      <span>門市地址：雲林縣北港鎮中山路 126 號</span>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="history-sidebar" id="history-sidebar">
+                  <div class="history-top"><i class="ri-history-fill"></i><span>歷史調價日期與原因</span></div>
+
+                  <div class="table">
+                    <table>
+  
+                      <tr>
+                          <th>調價日期</th>
+                          <th>調價原因</th> 
                       </tr>
                       <tr>
-                        <td>101-01</td>
-                        <td><select name="" id="">
-                          <option value="">一斤</option>
-                        </select></td>
-                        <td>狀元囍餅</td>
-                        <td><select name="" id="">
-                          <option value="">葷</option>
-                        </select></td>
-                        <td>招，招，招，招，招，招</td>
-                        <td>140</td>
-                        <td>140</td>
-                        <td>5%</td>
-                        <td><i class="ri-pencil-line"></i></td>
-                        <td><i class="ri-loop-left-line"></i></td>
+                        <td>2023/06/06</td>
+                        <td>蛋價上漲</td>
                       </tr>
-                    
-                  </table>
+                      <tr>
+                        <td>2023/06/06</td>
+                        <td>蛋價上漲</td>
+                      </tr>
+                      <tr>
+                        <td>2023/06/06</td>
+                        <td>蛋價上漲</td>
+                      </tr>
+                      <tr>
+                        <td>2023/06/06</td>
+                        <td>蛋價上漲</td>
+                      </tr>
+                      <tr>
+                        <td>2023/06/06</td>
+                        <td>蛋價上漲</td>
+                      </tr>
+                      <tr>
+                        <td>2023/06/06</td>
+                        <td>蛋價上漲</td>
+                      </tr>
+                      <tr>
+                        <td>2023/06/06</td>
+                        <td>蛋價上漲</td>
+                      </tr>
+                      <tr>
+                        <td>2023/06/06</td>
+                        <td>蛋價上漲</td>
+                      </tr>
+                      <tr>
+                        <td>2023/06/06</td>
+                        <td>蛋價上漲</td>
+                      </tr>
+                      <tr>
+                        <td>2023/06/06</td>
+                        <td>蛋價上漲</td>
+                      </tr>
+                      <tr>
+                        <td>2023/06/06</td>
+                        <td>蛋價上漲</td>
+                      </tr>
+                      <tr>
+                        <td>2023/06/06</td>
+                        <td>蛋價上漲</td>
+                      </tr>
+                      <tr>
+                        <td>2023/06/06</td>
+                        <td>蛋價上漲</td>
+                      </tr>
+                      <tr>
+                        <td>2023/06/06</td>
+                        <td>蛋價上漲</td>
+                      </tr>
+                      <tr>
+                        <td>2023/06/06</td>
+                        <td>蛋價上漲</td>
+                      </tr>
+  
+                    </table>
+                  </div>
+                  
 
                 </div>
                 
@@ -260,12 +362,50 @@
     ></script>
 
 
+
+    <!-- Hamburger Menu -->
     <script>
       const navBtn = document.getElementById("hamburger")
       const mainRow = document.getElementById("row")
 
       navBtn.addEventListener('click', ()=>{
         mainRow.classList.toggle("hamburger-click")
+      })
+
+    </script>
+
+
+    <!-- Hamburger Menu for Mobile -->
+    <script>
+      let hamburger_mobile = document.getElementById("hamburger-mobile")
+      let nav_menu = document.getElementById("nav_mobile")
+
+      hamburger_mobile.addEventListener('click', ()=>{
+        nav_menu.classList.toggle("mobile-nav")
+      })
+
+
+      document.addEventListener('click', (event)=>{
+        
+        if(!hamburger_mobile.contains(event.target)){
+          nav_menu.classList.remove("mobile-nav")
+        }
+      })
+
+      nav_menu.addEventListener('click', (event)=>{
+        event.stopPropagation()
+      })
+
+    </script>
+
+
+
+    <script>
+      const history = document.getElementById("history")
+      const history_sidebar = document.getElementById("history-sidebar")
+
+      history.addEventListener('click', ()=>{
+        history_sidebar.classList.toggle("show-history")
       })
 
     </script>

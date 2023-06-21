@@ -28,7 +28,7 @@
       <div class="group__container">
         <div class="group__container__row" id="row">
 
-          <div class="group__container__row__col1 column1">
+          <div class="group__container__row__col1 column1" id="nav_mobile">
             <div class="group__container__row__col1__wrapper wrapper">
               
               <div class="hamburger" id="hamburger">
@@ -70,13 +70,16 @@
           <div class="group__container__row__col2 column2">
             <div class="group__container__row__col2__wrapper">
               <div class="group__container__row__col2__wrapper__top-bar">
+                <div class="hamburger" id="hamburger-mobile">
+                  <i class="ri-menu-line hamburger-icon"></i>
+                </div>
                 <h5 class="title">群組管理</h5>
                 <!-- <div class="search"><input type="text" placeholder="搜尋統一編號或客戶名稱"><i class="ri-search-line"></i></div> -->
               </div>
               <div class="group__container__row__col2__wrapper__main">
                 
                 <div class="btns-wrapper">
-                  <div class="button1">
+                  <div class="button1" onclick="addBtn()">
                     <button class="btn"><i class="ri-add-line"></i><span>新增群組</span></button>
                   </div>
 
@@ -199,6 +202,9 @@
     ></script>
 
 
+
+
+    <!-- Hamburger Menu -->
     <script>
       const navBtn = document.getElementById("hamburger")
       const mainRow = document.getElementById("row")
@@ -207,6 +213,118 @@
         mainRow.classList.toggle("hamburger-click")
       })
 
+    </script>
+
+
+    <!-- Hamburger Menu for Mobile -->
+    <script>
+      let hamburger_mobile = document.getElementById("hamburger-mobile")
+      let nav_menu = document.getElementById("nav_mobile")
+
+      hamburger_mobile.addEventListener('click', ()=>{
+        nav_menu.classList.toggle("mobile-nav")
+      })
+
+
+      document.addEventListener('click', (event)=>{
+        
+        if(!hamburger_mobile.contains(event.target)){
+          nav_menu.classList.remove("mobile-nav")
+        }
+      })
+
+      nav_menu.addEventListener('click', (event)=>{
+        event.stopPropagation()
+      })
+
+    </script>
+
+
+
+
+    <!-- Edit Modal -->
+    <div
+      class="modal fade"
+      id="modalAdd"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true" data-bs-backdrop="static"
+    >
+      <div class="modal-dialog modal modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="group-modal-title" id="exampleModalLabel">
+              新增群組
+            </h1>
+            <button onclick="closeBtn()"
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="group-modal-body">
+            <div class="modal-edit-wrapper">
+
+              <form class="form">
+
+                <div class="main">
+                  <div class="first">
+                    <fieldset class="border">
+                      <legend class="float-none w-auto px-1">群組名稱</legend>
+                      <!-- <div> -->
+                        <input type="text">
+                      <!-- </div> -->
+                    </fieldset>
+                  </div>
+
+                  <div class="second">
+                    <h6>擁有權限</h6>
+                    <div>
+                      <label>
+                        <input type="checkbox" name="" id="">
+                        <span>新增權限</span>
+                      </label>
+                      <label>
+                        <input type="checkbox" name="" id="">
+                        <span>新增權限</span>
+                      </label>
+                      <label>
+                        <input type="checkbox" name="" id="">
+                        <span>新增權限</span>
+                      </label>
+                      <label>
+                        <input type="checkbox" name="" id="">
+                        <span>新增權限</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <button><span>確定新增</span></button>
+
+
+                </div>
+              
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <!-- Edit Modal Open Btn -->
+    <script>
+      function addBtn(index) {
+        $("#modalAdd").modal("show");
+      }
+    </script>
+
+    <script>
+      function closeBtn(index) {
+        $("#modalAdd").modal("hide");
+      }
     </script>
 
 

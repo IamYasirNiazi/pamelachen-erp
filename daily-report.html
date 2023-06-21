@@ -28,7 +28,7 @@
       <div class="daily-report__container">
         <div class="daily-report__container__row" id="row">
 
-          <div class="daily-report__container__row__col1 column1">
+          <div class="daily-report__container__row__col1 column1" id="nav_mobile">
             <div class="daily-report__container__row__col1__wrapper wrapper">
               
               <div class="hamburger" id="hamburger">
@@ -70,6 +70,9 @@
           <div class="daily-report__container__row__col2 column2">
             <div class="daily-report__container__row__col2__wrapper">
               <div class="daily-report__container__row__col2__wrapper__top-bar">
+                <div class="hamburger" id="hamburger-mobile">
+                  <i class="ri-menu-line hamburger-icon"></i>
+                </div>
                 <h5 class="title">當日製作品項統計</h5>
                 <!-- <div class="search"><input type="text" placeholder="搜尋統一編號或客戶名稱"><i class="ri-search-line"></i></div> -->
               </div>
@@ -208,12 +211,37 @@
     ></script>
 
 
+    <!-- Hamburger Menu -->
     <script>
       const navBtn = document.getElementById("hamburger")
       const mainRow = document.getElementById("row")
 
       navBtn.addEventListener('click', ()=>{
         mainRow.classList.toggle("hamburger-click")
+      })
+
+    </script>
+
+
+    <!-- Hamburger Menu for Mobile -->
+    <script>
+      let hamburger_mobile = document.getElementById("hamburger-mobile")
+      let nav_menu = document.getElementById("nav_mobile")
+
+      hamburger_mobile.addEventListener('click', ()=>{
+        nav_menu.classList.toggle("mobile-nav")
+      })
+
+
+      document.addEventListener('click', (event)=>{
+        
+        if(!hamburger_mobile.contains(event.target)){
+          nav_menu.classList.remove("mobile-nav")
+        }
+      })
+
+      nav_menu.addEventListener('click', (event)=>{
+        event.stopPropagation()
       })
 
     </script>
