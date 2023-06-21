@@ -1876,9 +1876,12 @@ a {
   .order-modal-body .modal-edit-wrapper .form .main .right .third {
     flex-wrap: wrap;
   }
+  .order-modal-body .modal-edit-wrapper .form .main .right .third fieldset {
+    width: 47% !important;
+  }
 }
 .order-modal-body .modal-edit-wrapper .form .main .right .third fieldset {
-  width: 100%;
+  width: 32%;
 }
 .order-modal-body .modal-edit-wrapper .form .main .right .fourth {
   display: flex;
@@ -2087,6 +2090,7 @@ a {
 .order-modal-body .modal-edit-wrapper .form .second-wrapper .table table tr td select {
   outline: none !important;
   border: none !important;
+  background: none !important;
 }
 .order-modal-body .modal-edit-wrapper .form .second-wrapper .table table tr td i {
   font-size: 0.8rem;

@@ -2029,14 +2029,14 @@ a{
                         @media (max-width: 575px){
                             flex-wrap: wrap; 
 
-                        //     fieldset{
-                        //         width: 47%;
-                        //     }
+                            fieldset{
+                                width: 47% !important;
+                            }
 
                         }
     
                         fieldset{
-                            width: 100%;
+                            width: 32%;
                         }
                     }
     
@@ -2268,6 +2268,7 @@ a{
                                 select{
                                     outline: none !important;
                                     border: none !important;
+                                    background: none !important;
                                 }
 
                                 i{
