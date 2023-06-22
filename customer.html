@@ -112,7 +112,7 @@
                       <td>02-345-6789#1234</td>
                       <td>02-345-6789</td>
                       <td>臺北市內湖區洲子街12號2樓 (台北創新發展中心)</td>
-                      <td><i class="ri-more-2-fill"></i></td>
+                      <td><i class="ri-more-2-fill" onclick="printBtn()"></i></td>
                     </tr>
                     <tr>
                       <td><input type="checkbox"></td>
@@ -123,7 +123,7 @@
                       <td>02-345-6789#1234</td>
                       <td>02-345-6789</td>
                       <td>臺北市內湖區洲子街12號2樓 (台北創新發展中心)</td>
-                      <td><i class="ri-more-2-fill"></i></td>
+                      <td><i class="ri-more-2-fill" onclick="printBtn()"></i></td>
                     </tr>
                     <tr>
                       <td><input type="checkbox"></td>
@@ -134,7 +134,7 @@
                       <td>02-345-6789#1234</td>
                       <td>02-345-6789</td>
                       <td>臺北市內湖區洲子街12號2樓 (台北創新發展中心)</td>
-                      <td><i class="ri-more-2-fill"></i></td>
+                      <td><i class="ri-more-2-fill" onclick="printBtn()"></i></td>
                     </tr>
                     <tr>
                       <td><input type="checkbox"></td>
@@ -145,7 +145,7 @@
                       <td>02-345-6789#1234</td>
                       <td>02-345-6789</td>
                       <td>臺北市內湖區洲子街12號2樓 (台北創新發展中心)</td>
-                      <td><i class="ri-more-2-fill"></i></td>
+                      <td><i class="ri-more-2-fill" onclick="printBtn()"></i></td>
                     </tr>
                     <tr>
                       <td><input type="checkbox"></td>
@@ -156,7 +156,7 @@
                       <td>02-345-6789#1234</td>
                       <td>02-345-6789</td>
                       <td>臺北市內湖區洲子街12號2樓 (台北創新發展中心)</td>
-                      <td><i class="ri-more-2-fill"></i></td>
+                      <td><i class="ri-more-2-fill" onclick="printBtn()"></i></td>
                     </tr>
                     <tr>
                       <td><input type="checkbox"></td>
@@ -167,7 +167,7 @@
                       <td>02-345-6789#1234</td>
                       <td>02-345-6789</td>
                       <td>臺北市內湖區洲子街12號2樓 (台北創新發展中心)</td>
-                      <td><i class="ri-more-2-fill"></i></td>
+                      <td><i class="ri-more-2-fill" onclick="printBtn()"></i></td>
                     </tr>
                     
                   </table>
@@ -267,7 +267,7 @@
 
 
 
-    <!-- Edit Modal -->
+    <!-- Edit Modal with button -->
     <div
       class="modal fade"
       id="modalAdd"
@@ -375,6 +375,170 @@
         $("#modalAdd").modal("hide");
       }
     </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Print Modal with three dots -->>
+        <div
+        class="modal fade"
+        id="modalPrint"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+        id="staticBackdrop" data-bs-backdrop="static"
+      >
+        <div class="modal-dialog modal-md modal-lg modal-xl modal-dialog-centered h-auto">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="print-modal-title" id="exampleModalLabel">
+                喜年來大飯店歷史訂單
+              </h1>
+              <button onclick="closePrint()"
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="print-modal-body">
+              <div class="modal-edit-wrapper">
+  
+                <div class="sheetOne">
+
+                  <div class="head">訂單編號 20230222-066</div>
+  
+                  <div class="main">
+
+                    <div class="first d-flex flex-column gap-1">
+                      <div class="d-flex align-items-center gap-2 w-auto">
+                        <span class="caption-bold">收件人姓名</span><span>王小明</span>
+                      </div>                      
+                      <div>
+                        <div class="d-flex align-items-center gap-2 w-auto flex-wrap">
+                          <span class="caption-bold">收件人手機</span><span>0912-345-678</span>
+                          <span class="caption-bold">收件人市話</span><span>02-123-4567#1234</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-2 w-auto flex-wrap">
+                          <span class="caption-bold">郵遞區號</span><span>01234</span>
+                          <span class="caption-bold">收件地址</span><span>臺北市內湖區洲子街12號2樓 (台北創新發展中心)</span>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center gap-2 w-auto flex-wrap">
+                        <span class="caption-bold">寄 件 備 註</span><span>我是備註我是備註我是備註我是備註我是備註，</span>
+                      </div>
+                      <div class="d-flex align-items-center gap-2 w-auto flex-wrap dates">
+                        <span class="caption-bold">到貨日期</span><span>2022/02/20</span>
+                        <span class="caption-bold">到貨農曆</span><span>2022/02/20</span>
+                        <span class="caption-bold">出貨日期</span><span>2022/02/20</span>
+                        <span class="caption-bold">製作日期</span><span>2022/02/20</span>
+                      </div>                     
+                    </div>
+
+                    <div class="second-wrapper">
+                      <div class="table">
+                        <table>
+      
+                          <tr>
+                            <th>品項編號</th>
+                            <th>品項大小</th>
+                            <th>品項名稱</th>
+                            <th>品項口味</th>
+                            <th>禮盒內容</th>
+                            <th>品項單價</th>
+                            <th>品項數量</th>
+                            <th>此品項總價</th>
+                          </tr>
+    
+                          <tr>
+                            <td>101-01</td>
+                            <td>-斤</td>
+                            <td>狀元囍餅</td>
+                            <td>葷</td>
+                            <td>招，招，招，招，招，招，招，招</td>
+                            <td>140</td>
+                            <td>10</td>
+                            <td>140</td>
+                          </tr>
+
+                          <tr>
+                            <td>101-01</td>
+                            <td>-斤</td>
+                            <td>狀元囍餅</td>
+                            <td>葷</td>
+                            <td>招，招，招，招，招，招，招，招</td>
+                            <td>140</td>
+                            <td>10</td>
+                            <td>140</td>
+                          </tr>
+
+                          <tr>
+                            <td>101-01</td>
+                            <td>-斤</td>
+                            <td>狀元囍餅</td>
+                            <td>葷</td>
+                            <td>招，招，招，招，招，招，招，招</td>
+                            <td>140</td>
+                            <td>10</td>
+                            <td>140</td>
+                          </tr>
+                          
+                        </table>
+                      </div>
+                    </div>
+
+                    <div class="third d-flex flex-column gap-1">
+                      <div class="d-flex align-items-center gap-2 w-auto flex-wrap">
+                        <span class="caption-bold">訂單總價</span><span>22,000</span><span class="caption-bold">訂金</span><span>2,000</span>
+                        <span class="caption-bold">付款方式</span><span>匯款</span>
+                      </div>
+                      <div class="d-flex align-items-center gap-2 w-auto flex-wrap">
+                        <span class="caption-bold">製作＆付款備註</span>
+                        <span>我是備註我是備註我是備註我是備註我是備註，</span>
+                      </div>                     
+                    </div>
+
+                  </div>
+  
+  
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      
+  
+  
+  
+      <!-- Edit Modal Open Btn -->
+      <script>
+        function printBtn(index) {
+          $("#modalPrint").modal("show");
+        }
+      </script>
+  
+      <script>
+        function closePrint(index) {
+          $("#modalPrint").modal("hide");
+        }
+      </script>
+
+
+
+
+
 
 
 

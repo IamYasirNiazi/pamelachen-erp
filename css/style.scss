@@ -153,6 +153,7 @@ section {
     }
 }
 
+
 button{
 
      &:hover{
@@ -6874,7 +6875,7 @@ a{
 }
 
 
-// Edit Modal
+// Edit Modal with btn
 .customer-modal-title{
     font-size: 1rem !important;
 
@@ -7129,6 +7130,324 @@ a{
 
     }
 }
+
+
+
+
+
+// Print Modal with three dots
+.print-modal-title{
+    font-size: 1rem;
+
+    @media (max-width: 575px){
+        font-size: .9rem;
+    }
+
+    @media (min-width: 576px) and (max-width: 767px){
+        font-size: 1rem;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px){
+        font-size: 1rem !important;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px){
+        font-size: 1.05rem !important;
+    }
+
+    @media (min-width: 1200px) and (max-width: 1399px){
+        font-size: 1.2rem !important;
+    }
+
+    @media (min-width: 1400px){
+        font-size: 1.3rem !important;
+    }
+}
+
+.print-modal-body {
+    background-color: #C4C6D0;
+
+    // @media (min-width:992px){
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    // }
+
+
+    .modal-edit-wrapper {
+        display: flex;
+        justify-content: center;
+        padding: 1.5rem 2rem !important;
+
+        @media (max-width: 575px){
+            padding: 1rem 1rem !important;
+        }
+    
+        @media (min-width: 576px) and (max-width: 767px){
+            padding: 1rem 1.5rem !important;
+        }
+
+        // @media (min-width: 768px) and (max-width: 991px){
+        //     width: 100%;
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+        // }
+
+
+        .sheetOne {
+            width: 100%;
+            border-radius: .4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: #fff;
+
+            @media (max-width: 991px){
+                width: 100%;
+            }
+    
+            @media (min-width: 992px){
+                width: 80%;
+            }
+
+            .caption-bold{
+                font-weight: 600;
+            }
+
+
+            .head{
+                background-color: #F5F3F7;
+                padding: .5rem 1rem;
+                border-top-left-radius: .4rem;
+                border-top-right-radius: .4rem;
+                width: 100%;
+                font-weight: 500;
+            }
+
+            .main{
+                padding: 1.2rem 1rem;
+                width: 100%;
+                display: flex;
+                flex-direction: column !important;
+                // align-items: flex-start;
+                justify-content: center;
+                gap: 1rem !important;
+
+
+                .first{
+
+                    span{
+                        @media (max-width: 575px){
+                            font-size: .6rem !important;
+                        }
+
+                        @media (min-width: 576px) and (max-width: 767px){
+                            font-size: .65rem !important;
+                        }
+
+                        @media (min-width: 768px) and (max-width: 991px){
+                            font-size: .65rem !important;
+                        }
+
+                        @media (min-width: 992px) and (max-width: 1199px){
+                            font-size: .7rem !important;
+                        }
+
+                        @media (min-width: 1200px) and (max-width: 1399px){
+                            font-size: .75rem !important;
+                        }
+                    
+                        @media (min-width: 1400px){
+                            font-size: .8rem !important;
+                        }
+                    }
+
+                    .dates{
+                        margin-top: 2rem;
+                        border-top: 1px solid #202020;
+                        border-bottom: 1px solid #202020;
+                        padding: .3rem 0
+                    }
+
+                }
+
+
+                .second-wrapper{
+                    margin-top: -.5rem;
+                    // margin-top: 3rem;
+                    width: 100%;
+    
+                    .table{
+                        // margin-top: 2rem;
+                        padding: 0 !important;
+                        // display: flex;
+                        // justify-content: center;
+                        width: 100%;
+                        height: 100%;
+    
+                        @media (max-width: 575px){
+                            height: 100%;
+                        }
+    
+                        @media (min-width: 576px) and (max-width: 767px){
+                            height: 100%;    
+                        }
+    
+                        overflow-x: scroll;
+                        overflow-y: scroll;
+                        // position: relative;
+                        max-width: 100% !important; /* adjust to your desired maximum width */
+                        overflow-x: auto;
+                        white-space: nowrap;
+                        // position: relative;
+    
+    
+                        &::-webkit-scrollbar {
+                            // display: none;
+                        }
+    
+    
+                        table{
+                            table-layout: auto;
+                            width: 100%;
+                            // border-collapse: separate;
+                            // border-spacing: 0 .55rem;
+    
+                            td:first-child {
+                                // border-radius: 10px 0 0 10px;
+                            }
+    
+                            td:last-child {
+                                // border-radius: 0 10px 10px 0;
+                            }
+    
+                            tr {
+                                // background-color: theme-color(site-bg);
+                                // position: relative;
+                                
+                                td {
+                                    padding: .5rem .5rem !important;
+                                    font-size: .65rem;
+                                    font-weight: 500;
+                                    text-align: start;
+                                    // border: none !important;
+                                    margin: 2rem 0;
+                                    border: 1px solid 202020 !important;
+    
+                                    @media (max-width: 575px){
+                                        font-size: .65rem !important;
+                                    }
+            
+                                    @media (min-width: 576px) and (max-width: 767px){
+                                        font-size: .7rem !important;
+                                    }
+    
+                                    @media (min-width: 768px) and (max-width: 991px){
+                                        font-size: .7rem !important;
+                                    }
+    
+                                    @media (min-width: 992px) and (max-width: 1199px){
+                                        font-size: .75rem !important;
+                                    }
+    
+                                    @media (min-width: 1200px) and (max-width: 1399px){
+                                        font-size: .8rem !important;
+                                    }
+                                
+                                    @media (min-width: 1400px){
+                                        font-size: .85rem !important;
+                                    }
+                                }
+                            }
+    
+
+                            tr.heading {
+                                background: none;
+                                // padding: 0 1rem !important;
+    
+                            }
+    
+                            th {
+                                font-size: .6rem;
+                                font-weight: 600;
+                                text-align: start;
+                                border: none !important;
+                                padding: .5rem .5rem !important;
+    
+                                @media (max-width: 575px){
+                                    font-size: .65rem !important;
+                                }
+        
+                                @media (min-width: 576px) and (max-width: 767px){
+                                    font-size: .7rem !important;
+                                }
+    
+                                @media (min-width: 768px) and (max-width: 991px){
+                                    font-size: .7rem !important;
+                                }
+    
+                                @media (min-width: 992px) and (max-width: 1199px){
+                                    font-size: .75rem !important;
+                                }
+    
+                                @media (min-width: 1200px) and (max-width: 1399px){
+                                    font-size: .8rem !important;
+                                }
+                            
+                                @media (min-width: 1400px){
+                                    font-size: .85rem !important;
+                                }
+    
+                            }
+                        }
+    
+                    }
+    
+    
+    
+                    
+    
+                }
+
+                .third{
+
+                    span{
+                        @media (max-width: 575px){
+                            font-size: .6rem !important;
+                        }
+
+                        @media (min-width: 576px) and (max-width: 767px){
+                            font-size: .65rem !important;
+                        }
+
+                        @media (min-width: 768px) and (max-width: 991px){
+                            font-size: .65rem !important;
+                        }
+
+                        @media (min-width: 992px) and (max-width: 1199px){
+                            font-size: .7rem !important;
+                        }
+
+                        @media (min-width: 1200px) and (max-width: 1399px){
+                            font-size: .75rem !important;
+                        }
+                    
+                        @media (min-width: 1400px){
+                            font-size: .8rem !important;
+                        }
+                    }
+
+                }
+
+            }
+
+
+        }
+
+    }
+}
+
 
 
 
@@ -12745,15 +13064,6 @@ a{
         }
     }
 }
-
-
-
-
-
-
-
-
-
 
 
 
