@@ -25,12 +25,12 @@
   <body>
 
 
-    <div class="home">
-      <div class="home__container">
-        <div class="home__container__row" id="row">
+    <div class="edit-product">
+      <div class="edit-product__container">
+        <div class="edit-product__container__row" id="row">
 
-          <div class="home__container__row__col1 column1" id="nav_mobile">
-            <div class="home__container__row__col1__wrapper wrapper">
+          <div class="edit-product__container__row__col1 column1" id="nav_mobile">
+            <div class="edit-product__container__row__col1__wrapper wrapper">
               
               <div class="hamburger" id="hamburger">
                 <i class="ri-menu-line hamburger-icon"></i>
@@ -68,18 +68,18 @@
 
           </div>
 
-          <div class="home__container__row__col2 column2">
-            <div class="home__container__row__col2__wrapper">
-              <div class="home__container__row__col2__wrapper__top-bar">
+          <div class="edit-product__container__row__col2 column2">
+            <div class="edit-product__container__row__col2__wrapper">
+              <div class="edit-product__container__row__col2__wrapper__top-bar">
                 <div class="hamburger" id="hamburger-mobile">
                   <i class="ri-menu-line hamburger-icon"></i>
                 </div>
-                <h5 class="title">訂單</h5>
-                <div class="search"><input type="text" placeholder="搜尋統一編號或客戶名稱"><i class="ri-search-line"></i></div>
+                <!-- <h5 class="title">訂單</h5> -->
+                <!-- <div class="search"><input type="text" placeholder="搜尋統一編號或客戶名稱"><i class="ri-search-line"></i></div> -->
               </div>
-              <div class="home__container__row__col2__wrapper__main">
+              <div class="edit-product__container__row__col2__wrapper__main">
                 
-                <div class="btns-wrapper">
+                <!-- <div class="btns-wrapper">
                   <div class="button1">
                     <button class="btn"><i class="ri-add-line"></i><span>新增訂單</span></button>
                   </div>
@@ -110,8 +110,7 @@
                       <td><i class="ri-printer-line print"></i></td>
                       <td><i class="ri-printer-line print"></i></td>
                       <td><i class="ri-printer-line print"></i></td>
-                      <!-- <td><i class="ri-pencil-line" onclick="editBtn()"></i></td> -->
-                      <td><a href="/edit-product.html"><i class="ri-pencil-line"></i></a></td>
+                      <td><i class="ri-pencil-line" onclick="editBtn()"></i></td>
                       <td><i class="ri-delete-bin-5-line" onclick="delBtn()"></i></td>
                     </tr>
                     <tr>
@@ -123,8 +122,7 @@
                       <td><i class="ri-printer-line print"></i></td>
                       <td><i class="ri-printer-line print"></i></td>
                       <td><i class="ri-printer-line print"></i></td>
-                      <!-- <td><i class="ri-pencil-line" onclick="editBtn()"></i></td> -->
-                      <td><a href="/edit-product.html"><i class="ri-pencil-line"></i></a></td>
+                      <td><i class="ri-pencil-line" onclick="editBtn()"></i></td>
                       <td><i class="ri-delete-bin-5-line" onclick="delBtn()"></i></td>
                     </tr>
                     <tr>
@@ -136,8 +134,7 @@
                       <td><i class="ri-printer-line print"></i></td>
                       <td><i class="ri-printer-line print"></i></td>
                       <td><i class="ri-printer-line print"></i></td>
-                      <!-- <td><i class="ri-pencil-line" onclick="editBtn()"></i></td> -->
-                      <td><a href="/edit-product.html"><i class="ri-pencil-line"></i></a></td>
+                      <td><i class="ri-pencil-line" onclick="editBtn()"></i></td>
                       <td><i class="ri-delete-bin-5-line" onclick="delBtn()"></i></td>
                     </tr>
                     <tr>
@@ -149,8 +146,7 @@
                       <td><i class="ri-printer-line print"></i></td>
                       <td><i class="ri-printer-line print"></i></td>
                       <td><i class="ri-printer-line print"></i></td>
-                      <!-- <td><i class="ri-pencil-line" onclick="editBtn()"></i></td> -->
-                      <td><a href="/edit-product.html"><i class="ri-pencil-line"></i></a></td>
+                      <td><i class="ri-pencil-line" onclick="editBtn()"></i></td>
                       <td><i class="ri-delete-bin-5-line" onclick="delBtn()"></i></td>
                     </tr>
                     <tr>
@@ -162,8 +158,7 @@
                       <td><i class="ri-printer-line print"></i></td>
                       <td><i class="ri-printer-line print"></i></td>
                       <td><i class="ri-printer-line print"></i></td>
-                      <!-- <td><i class="ri-pencil-line" onclick="editBtn()"></i></td> -->
-                      <td><a href="/edit-product.html"><i class="ri-pencil-line"></i></a></td>
+                      <td><i class="ri-pencil-line" onclick="editBtn()"></i></td>
                       <td><i class="ri-delete-bin-5-line" onclick="delBtn()"></i></td>
                     </tr>
                     <tr>
@@ -175,14 +170,312 @@
                       <td><i class="ri-printer-line print"></i></td>
                       <td><i class="ri-printer-line print"></i></td>
                       <td><i class="ri-printer-line print"></i></td>
-                      <!-- <td><i class="ri-pencil-line" onclick="editBtn()"></i></td> -->
-                      <td><a href="/edit-product.html"><i class="ri-pencil-line"></i></a></td>
+                      <td><i class="ri-pencil-line" onclick="editBtn()"></i></td>
                       <td><i class="ri-delete-bin-5-line" onclick="delBtn()"></i></td>
                     </tr>
                     
                   </table>
 
-                </div>
+                </div> -->
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="order-modal-title" id="exampleModalLabel">
+                        新增訂單 20230222-066
+                      </h1>
+                      <!-- <button onclick="closeBtnOne()"
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button> -->
+                    </div>
+                    <div class="order-modal-body">
+                      <div class="modal-edit-wrapper">
+          
+                        <form class="form">
+          
+                          <div class="main">
+                            <div class="left">
+                              <div class="first">
+                                <fieldset class="border">
+                                  <legend  class="float-none w-auto px-1">客戶名稱</legend>
+                                  <!-- <div> -->
+                                    <select name="" id="">
+                                      <option value="">喜年來大飯店a</option>
+                                    </select>
+                                  <!-- </div> -->
+                                </fieldset>
+            
+                                <fieldset class="border">
+                                  <legend  class="float-none w-auto px-1">統一編號</legend>
+                                  <!-- <div> -->
+                                    <input type="text">
+                                  <!-- </div> -->
+                                </fieldset>
+            
+                                <fieldset class="select-box border">
+                                  <legend  class="float-none w-auto px-1">客戶等級</legend>
+                                  <!-- <div> -->
+                                    <select name="" id="">
+                                      <option value="">1</option>
+                                    </select>
+                                  <!-- </div> -->
+                                </fieldset>
+                              </div>
+            
+                              <div class="second">
+                                <fieldset class="border">
+                                  <legend class="float-none w-auto px-1">發票地址</legend>
+                                  <!-- <div> -->
+                                    <input type="text" placeholder="臺北市內湖區洲子街12號2樓 (台北創新發展中心)">
+                                  <!-- </div> -->
+                                </fieldset>
+            
+                                <fieldset class="border">
+                                  <legend class="float-none w-auto px-1">郵遞區號（自動）</legend>
+                                  <!-- <div> -->
+                                    <input type="text">
+                                  <!-- </div> -->
+                                </fieldset>
+                              </div>
+            
+                              <div class="third">
+                                <fieldset class="border">
+                                  <legend class="float-none w-auto px-1">客戶手機</legend>
+                                  <!-- <div> -->
+                                    <input type="text" placeholder="製作＆付款備註">
+                                  <!-- </div> -->
+                                </fieldset>
+            
+                                <fieldset class="border">
+                                  <legend class="float-none w-auto px-1">客戶市話</legend>
+                                  <!-- <div> -->
+                                    <input type="text">
+                                  <!-- </div> -->
+                                </fieldset>
+            
+                                <fieldset class="border">
+                                  <legend class="float-none w-auto px-1">客戶傳真號碼</legend>
+                                  <!-- <div> -->
+                                    <input type="text">
+                                  <!-- </div> -->
+                                </fieldset>
+                              </div>
+            
+                              <div class="fourth">
+                                <fieldset class="border">
+                                  <legend class="float-none w-auto px-1">我是備註我是備註我是備註我是備註我是備註我是備註我是備註</legend>
+                                  <!-- <div> -->
+                                    <textarea name="" id="" rows="4"></textarea>
+                                  <!-- </div> -->
+                                </fieldset>
+                              </div>
+            
+            
+                            </div>
+            
+                            <div class="line"></div>
+            
+                            <div class="right">
+                              <div class="first">
+                                <fieldset class="border">
+                                  <legend class="float-none w-auto px-1">收件人姓名</legend>
+                                  <!-- <div> -->
+                                    <input type="text" placeholder="王小明">
+                                  <!-- </div> -->
+                                </fieldset>
+                                <fieldset class="border">
+                                  <legend class="float-none w-auto px-1">收件人手機</legend>
+                                  <!-- <div> -->
+                                    <input type="text" placeholder="0912-345-678">
+                                  <!-- </div> -->
+                                </fieldset>
+                                <fieldset class="border">
+                                  <legend class="float-none w-auto px-1">收件人市話</legend>
+                                  <!-- <div> -->
+                                    <input type="text" placeholder="02-345-6789">
+                                  <!-- </div> -->
+                                </fieldset>
+                              </div>
+            
+                              <div class="second">
+                                <div class="d-flex align-items-center gap-2 mb-1 check">
+                                  <input type="checkbox" name="" id=""><span>與發票地址相同</span>
+                                </div>
+                                <fieldset class="border">
+                                  <legend class="float-none w-auto px-1">發票地址</legend>
+                                  <!-- <div> -->
+                                    <input type="text" placeholder="臺北市內湖區洲子街12號2樓 (台北創新發展中心)">
+                                  <!-- </div> -->
+                                </fieldset>
+                                <fieldset class="border">
+                                  <legend class="float-none w-auto px-1">郵遞區號</legend>
+                                  <!-- <div> -->
+                                    <input type="text" placeholder="12345">
+                                  <!-- </div> -->
+                                </fieldset>
+                              </div>
+            
+                              <div class="third">
+                                <fieldset class="border date-label">
+                                  <legend class="float-none w-auto px-1">交貨日期</legend>
+                                  <!-- <div> -->
+                                    <!-- <input type="date"> -->
+                                    <input required="" type="date" class="from form-control" placeholder="" onfocus="(this.type='date')"/>
+                                  <!-- </div> -->
+                                </fieldset>
+                                <fieldset class="border date-label">
+                                  <legend class="float-none w-auto px-1">交貨日期</legend>
+                                  <!-- <div> -->
+                                    <!-- <input type="date"> -->
+                                    <input required="" type="date" class="from form-control" placeholder="" onfocus="(this.type='date')"/>
+                                  <!-- </div> -->
+                                </fieldset>
+                                <fieldset class="border date-label">
+                                  <legend class="float-none w-auto px-1">交貨日期</legend>
+                                  <!-- <div> -->
+                                    <!-- <input type="date"> -->
+                                    <input required="" type="date" class="from form-control" placeholder="" onfocus="(this.type='date')"/>
+                                  <!-- </div> -->
+                                </fieldset>
+                              </div>
+            
+                              <div class="fourth">
+                                <fieldset class="border field1">
+                                  <legend class="float-none w-auto px-1">訂單總價</legend>
+                                  <!-- <div> -->
+                                    <input type="text" placeholder="22,000">
+                                  <!-- </div> -->
+                                </fieldset>
+                                <fieldset class="border">
+                                  <legend class="float-none w-auto px-1">訂金</legend>
+                                  <!-- <div> -->
+                                    <input type="text" placeholder="2,000">
+                                  <!-- </div> -->
+                                </fieldset>
+                                <fieldset class="select-box border">
+                                  <legend class="float-none w-auto px-1">付款方式</legend>
+                                  <!-- <div> -->
+                                    <select name="" id="">
+                                      <option value="">匯款</option>
+                                    </select>
+                                  <!-- </div> -->
+                                </fieldset>
+                                <fieldset class="border">
+                                  <legend class="float-none w-auto px-1">宅配公司</legend>
+                                  <!-- <div> -->
+                                    <input type="text" placeholder="台灣宅配通">
+                                  <!-- </div> -->
+                                </fieldset>
+                              </div>
+            
+                              <div class="fifth">
+                                <fieldset class="border">
+                                  <legend class="float-none w-auto px-1">寄件備註</legend>
+                                  <!-- <div> -->
+                                    <input type="text" placeholder="我是備註我是備註我是備註我是備註我是備註我是備註我是備註我是備註我是備註">
+                                  <!-- </div> -->
+                                </fieldset>
+                              </div>
+            
+            
+                            </div>
+                          </div>
+          
+                          <div class="second-wrapper">
+                            <button class="btn">確定下單</button>
+                            <div class="table">
+                              <table>
+            
+                                <tr>
+                                  <th>項次 (自動)</th>
+                                  <th>編號 (自動)</th>
+                                  <th>大小</th>
+                                  <th>名稱</th>
+                                  <th>口味</th>
+                                  <th>禮盒內容</th>
+                                  <th>單價 (自動)</th>
+                                  <th>數量</th>
+                                  <th>總計 (自動)</th>
+                                  <th></th>
+                                  <th></th>
+                                </tr>
+          
+                                <tr>
+                                  <td>1</td>
+                                  <td>101-01</td>
+                                  <td><select name="" id="">
+                                    <option value="">-斤</option>
+                                  </select></td>
+                                  <td><select name="" id="" onchange="openModals()">
+                                    <option value="option1">三斤狀元囍餅</option>
+                                    <option value="option2">二斤狀元囍餅</option>
+                                    <option value="option3">一斤狀元囍餅</option>
+                                    <option value="option4">一斤核桃囍餅</option>
+                                    <option value="option5">一斤素食囍餅</option>
+                                    <option value="option6">一斤鳯梨囍餅</option>
+                                    <option value="option7">一斤鳯凰酥囍餅</option>
+                                    <option value="option8">一斤鳯梅酥囍餅</option>
+                                    <option value="option9">一斤鳯椰果酥囍餅</option>
+                                    <option value="option10">一斤紅豆麻糬囍餅</option>
+                                    <option value="option11">一斤芋頭麻糬囍餅</option>
+                                    <option value="option12">一斤綠茶麻糬囍餅</option>
+                                    <option value="option13">一斤山藥麻糬囍餅</option>
+                                    <option value="option14">一斤黑芝麻囍餅</option>
+                                    <option value="option15">一斤黑芝麻麻糬囍餅</option>
+                                    <option value="option16">一斤黑糖麻糬囍餅</option>
+                                    <option value="option17">一斤咖啡麻糬囍餅</option>
+                                    <option value="option18">一斤冬瓜肉囍餅</option>
+                                    <option value="option19">一斤魯肉豆沙囍餅</option>
+                                    <option value="option20">一斤咖哩魯肉囍餅</option>
+                                    <option value="option21">一斤芝麻酥囍餅</option>
+                                    <option value="option22">一斤狀元囍餅</option>
+                                    <option value="option23">一斤狀元囍餅</option>
+                                    <option value="option24">一斤狀元囍餅</option>
+                                    <option value="option25">一斤核桃囍餅</option>
+                                    <option value="option26">一斤素食囍餅</option>
+                                    <option value="option27">一斤鳯梨囍餅</option>
+                                    <option value="option28">一斤鳯凰酥囍餅</option>
+                                    <option value="option29">一斤鳯梅酥囍餅</option>
+                                    <option value="option30">一斤鳯椰果酥囍餅</option>
+                                    <option value="option31">一斤紅豆麻糬囍餅</option>
+                                    <option value="option32">一斤芋頭麻糬囍餅</option>
+                                    <option value="option33">一斤綠茶麻糬囍餅</option>
+                                    <option value="option34">二斤鴛鴦禮盒</option>
+                                    <option value="option35">三斤鴛鴦禮盒</option>
+                                    <option value="option36">三斤六色禮盒 ＜方形＞	</option>
+                                    <option value="option37">三斤六色禮盒 ＜心形＞	</option>
+                                    <option value="option38">三斤六色禮盒 ＜方形長盒＞	</option>
+                                    <option value="option39">三斤六色禮盒 ＜圓形＞	</option>
+                                    <option value="option40">雙層 A+B 禮盒</option>
+                                    <option value="option41">雙層雙 B 禮盒</option>
+                                    <option value="option42">四斤六色禮盒</option>
+                                  </select></td>
+                                  <td><select name="" id="">
+                                    <option value="">葷</option>
+                                  </select></td>
+                                  <td>招，招，招，招，招，招，招，招</td>
+                                  <td>140</td>
+                                  <td>10</td>
+                                  <td>140</td>
+                                  <td><i class="ri-save-3-line"></i></td>
+                                  <td><i class="ri-delete-bin-5-line" ></i><td>
+                                </tr>
+                                
+                              </table>
+                              <!-- <button class="btn2" onclick="addNewBtn()"><i class="ri-add-line"></i><span>新增品項</span></button> -->
+                              <button class="btn2"><i class="ri-add-line"></i><span>新增品項</span></button>
+                            </div>
+          
+          
+                          </div>
+          
+          
+                        </form>
+                      </div>
+                    </div>
+                  </div>
                 
               </div>
 
@@ -272,338 +565,6 @@
         event.stopPropagation()
       })
 
-    </script>
-
-
-
-
-
-    <!-- Edit Modal -->
-    <div
-      class="modal fade"
-      id="modalEdit"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-      id="staticBackdrop" data-bs-backdrop="static"
-    >
-      <div class="modal-dialog modal-md modal-lg modal-xl modal-dialog-centered h-auto">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="order-modal-title" id="exampleModalLabel">
-              新增訂單 20230222-066
-            </h1>
-            <button onclick="closeBtnOne()"
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="order-modal-body">
-            <div class="modal-edit-wrapper">
-
-              <form class="form">
-
-                <div class="main">
-                  <div class="left">
-                    <div class="first">
-                      <fieldset class="border">
-                        <legend  class="float-none w-auto px-1">客戶名稱</legend>
-                        <!-- <div> -->
-                          <select name="" id="">
-                            <option value="">喜年來大飯店a</option>
-                          </select>
-                        <!-- </div> -->
-                      </fieldset>
-  
-                      <fieldset class="border">
-                        <legend  class="float-none w-auto px-1">統一編號</legend>
-                        <!-- <div> -->
-                          <input type="text">
-                        <!-- </div> -->
-                      </fieldset>
-  
-                      <fieldset class="select-box border">
-                        <legend  class="float-none w-auto px-1">客戶等級</legend>
-                        <!-- <div> -->
-                          <select name="" id="">
-                            <option value="">1</option>
-                          </select>
-                        <!-- </div> -->
-                      </fieldset>
-                    </div>
-  
-                    <div class="second">
-                      <fieldset class="border">
-                        <legend class="float-none w-auto px-1">發票地址</legend>
-                        <!-- <div> -->
-                          <input type="text" placeholder="臺北市內湖區洲子街12號2樓 (台北創新發展中心)">
-                        <!-- </div> -->
-                      </fieldset>
-  
-                      <fieldset class="border">
-                        <legend class="float-none w-auto px-1">郵遞區號（自動）</legend>
-                        <!-- <div> -->
-                          <input type="text">
-                        <!-- </div> -->
-                      </fieldset>
-                    </div>
-  
-                    <div class="third">
-                      <fieldset class="border">
-                        <legend class="float-none w-auto px-1">客戶手機</legend>
-                        <!-- <div> -->
-                          <input type="text" placeholder="製作＆付款備註">
-                        <!-- </div> -->
-                      </fieldset>
-  
-                      <fieldset class="border">
-                        <legend class="float-none w-auto px-1">客戶市話</legend>
-                        <!-- <div> -->
-                          <input type="text">
-                        <!-- </div> -->
-                      </fieldset>
-  
-                      <fieldset class="border">
-                        <legend class="float-none w-auto px-1">客戶傳真號碼</legend>
-                        <!-- <div> -->
-                          <input type="text">
-                        <!-- </div> -->
-                      </fieldset>
-                    </div>
-  
-                    <div class="fourth">
-                      <fieldset class="border">
-                        <legend class="float-none w-auto px-1">我是備註我是備註我是備註我是備註我是備註我是備註我是備註</legend>
-                        <!-- <div> -->
-                          <textarea name="" id="" rows="4"></textarea>
-                        <!-- </div> -->
-                      </fieldset>
-                    </div>
-  
-  
-                  </div>
-  
-                  <div class="line"></div>
-  
-                  <div class="right">
-                    <div class="first">
-                      <fieldset class="border">
-                        <legend class="float-none w-auto px-1">收件人姓名</legend>
-                        <!-- <div> -->
-                          <input type="text" placeholder="王小明">
-                        <!-- </div> -->
-                      </fieldset>
-                      <fieldset class="border">
-                        <legend class="float-none w-auto px-1">收件人手機</legend>
-                        <!-- <div> -->
-                          <input type="text" placeholder="0912-345-678">
-                        <!-- </div> -->
-                      </fieldset>
-                      <fieldset class="border">
-                        <legend class="float-none w-auto px-1">收件人市話</legend>
-                        <!-- <div> -->
-                          <input type="text" placeholder="02-345-6789">
-                        <!-- </div> -->
-                      </fieldset>
-                    </div>
-  
-                    <div class="second">
-                      <div class="d-flex align-items-center gap-2 mb-1 check">
-                        <input type="checkbox" name="" id=""><span>與發票地址相同</span>
-                      </div>
-                      <fieldset class="border">
-                        <legend class="float-none w-auto px-1">發票地址</legend>
-                        <!-- <div> -->
-                          <input type="text" placeholder="臺北市內湖區洲子街12號2樓 (台北創新發展中心)">
-                        <!-- </div> -->
-                      </fieldset>
-                      <fieldset class="border">
-                        <legend class="float-none w-auto px-1">郵遞區號</legend>
-                        <!-- <div> -->
-                          <input type="text" placeholder="12345">
-                        <!-- </div> -->
-                      </fieldset>
-                    </div>
-  
-                    <div class="third">
-                      <fieldset class="border date-label">
-                        <legend class="float-none w-auto px-1">交貨日期</legend>
-                        <!-- <div> -->
-                          <!-- <input type="date"> -->
-                          <input required="" type="date" class="from form-control" placeholder="" onfocus="(this.type='date')"/>
-                        <!-- </div> -->
-                      </fieldset>
-                      <fieldset class="border date-label">
-                        <legend class="float-none w-auto px-1">交貨日期</legend>
-                        <!-- <div> -->
-                          <!-- <input type="date"> -->
-                          <input required="" type="date" class="from form-control" placeholder="" onfocus="(this.type='date')"/>
-                        <!-- </div> -->
-                      </fieldset>
-                      <fieldset class="border date-label">
-                        <legend class="float-none w-auto px-1">交貨日期</legend>
-                        <!-- <div> -->
-                          <!-- <input type="date"> -->
-                          <input required="" type="date" class="from form-control" placeholder="" onfocus="(this.type='date')"/>
-                        <!-- </div> -->
-                      </fieldset>
-                    </div>
-  
-                    <div class="fourth">
-                      <fieldset class="border field1">
-                        <legend class="float-none w-auto px-1">訂單總價</legend>
-                        <!-- <div> -->
-                          <input type="text" placeholder="22,000">
-                        <!-- </div> -->
-                      </fieldset>
-                      <fieldset class="border">
-                        <legend class="float-none w-auto px-1">訂金</legend>
-                        <!-- <div> -->
-                          <input type="text" placeholder="2,000">
-                        <!-- </div> -->
-                      </fieldset>
-                      <fieldset class="select-box border">
-                        <legend class="float-none w-auto px-1">付款方式</legend>
-                        <!-- <div> -->
-                          <select name="" id="">
-                            <option value="">匯款</option>
-                          </select>
-                        <!-- </div> -->
-                      </fieldset>
-                      <fieldset class="border">
-                        <legend class="float-none w-auto px-1">宅配公司</legend>
-                        <!-- <div> -->
-                          <input type="text" placeholder="台灣宅配通">
-                        <!-- </div> -->
-                      </fieldset>
-                    </div>
-  
-                    <div class="fifth">
-                      <fieldset class="border">
-                        <legend class="float-none w-auto px-1">寄件備註</legend>
-                        <!-- <div> -->
-                          <input type="text" placeholder="我是備註我是備註我是備註我是備註我是備註我是備註我是備註我是備註我是備註">
-                        <!-- </div> -->
-                      </fieldset>
-                    </div>
-  
-  
-                  </div>
-                </div>
-
-                <div class="second-wrapper">
-                  <button class="btn">確定下單</button>
-                  <div class="table">
-                    <table>
-  
-                      <tr>
-                        <th>項次 (自動)</th>
-                        <th>編號 (自動)</th>
-                        <th>大小</th>
-                        <th>名稱</th>
-                        <th>口味</th>
-                        <th>禮盒內容</th>
-                        <th>單價 (自動)</th>
-                        <th>數量</th>
-                        <th>總計 (自動)</th>
-                        <th></th>
-                        <th></th>
-                      </tr>
-
-                      <tr>
-                        <td>1</td>
-                        <td>101-01</td>
-                        <td><select name="" id="">
-                          <option value="">-斤</option>
-                        </select></td>
-                        <td><select name="" id="" onchange="openModals()">
-                          <option value="option1">三斤狀元囍餅</option>
-                          <option value="option2">二斤狀元囍餅</option>
-                          <option value="option3">一斤狀元囍餅</option>
-                          <option value="option4">一斤核桃囍餅</option>
-                          <option value="option5">一斤素食囍餅</option>
-                          <option value="option6">一斤鳯梨囍餅</option>
-                          <option value="option7">一斤鳯凰酥囍餅</option>
-                          <option value="option8">一斤鳯梅酥囍餅</option>
-                          <option value="option9">一斤鳯椰果酥囍餅</option>
-                          <option value="option10">一斤紅豆麻糬囍餅</option>
-                          <option value="option11">一斤芋頭麻糬囍餅</option>
-                          <option value="option12">一斤綠茶麻糬囍餅</option>
-                          <option value="option13">一斤山藥麻糬囍餅</option>
-                          <option value="option14">一斤黑芝麻囍餅</option>
-                          <option value="option15">一斤黑芝麻麻糬囍餅</option>
-                          <option value="option16">一斤黑糖麻糬囍餅</option>
-                          <option value="option17">一斤咖啡麻糬囍餅</option>
-                          <option value="option18">一斤冬瓜肉囍餅</option>
-                          <option value="option19">一斤魯肉豆沙囍餅</option>
-                          <option value="option20">一斤咖哩魯肉囍餅</option>
-                          <option value="option21">一斤芝麻酥囍餅</option>
-                          <option value="option22">一斤狀元囍餅</option>
-                          <option value="option23">一斤狀元囍餅</option>
-                          <option value="option24">一斤狀元囍餅</option>
-                          <option value="option25">一斤核桃囍餅</option>
-                          <option value="option26">一斤素食囍餅</option>
-                          <option value="option27">一斤鳯梨囍餅</option>
-                          <option value="option28">一斤鳯凰酥囍餅</option>
-                          <option value="option29">一斤鳯梅酥囍餅</option>
-                          <option value="option30">一斤鳯椰果酥囍餅</option>
-                          <option value="option31">一斤紅豆麻糬囍餅</option>
-                          <option value="option32">一斤芋頭麻糬囍餅</option>
-                          <option value="option33">一斤綠茶麻糬囍餅</option>
-                          <option value="option34">二斤鴛鴦禮盒</option>
-                          <option value="option35">三斤鴛鴦禮盒</option>
-                          <option value="option36">三斤六色禮盒 ＜方形＞	</option>
-                          <option value="option37">三斤六色禮盒 ＜心形＞	</option>
-                          <option value="option38">三斤六色禮盒 ＜方形長盒＞	</option>
-                          <option value="option39">三斤六色禮盒 ＜圓形＞	</option>
-                          <option value="option40">雙層 A+B 禮盒</option>
-                          <option value="option41">雙層雙 B 禮盒</option>
-                          <option value="option42">四斤六色禮盒</option>
-                        </select></td>
-                        <td><select name="" id="">
-                          <option value="">葷</option>
-                        </select></td>
-                        <td>招，招，招，招，招，招，招，招</td>
-                        <td>140</td>
-                        <td>10</td>
-                        <td>140</td>
-                        <td><i class="ri-save-3-line"></i></td>
-                        <td><i class="ri-delete-bin-5-line" ></i><td>
-                      </tr>
-                      
-                    </table>
-                    <!-- <button class="btn2" onclick="addNewBtn()"><i class="ri-add-line"></i><span>新增品項</span></button> -->
-                    <button class="btn2"><i class="ri-add-line"></i><span>新增品項</span></button>
-                  </div>
-
-
-                </div>
-
-
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    
-
-
-
-    <!-- Edit Modal Open Btn -->
-    <script>
-      function editBtn(index) {
-        $("#modalEdit").modal("show");
-      }
-    </script>
-
-    <script>
-      function closeBtnOne(index) {
-        $("#modalEdit").modal("hide");
-      }
     </script>
 
 

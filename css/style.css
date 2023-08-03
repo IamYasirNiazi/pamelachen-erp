@@ -2431,6 +2431,1577 @@ a {
   color: #fff;
 }
 
+.edit-product__container {
+  width: 100%;
+}
+.edit-product__container__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+.edit-product__container__row__col1 {
+  width: 22%;
+}
+@media (max-width: 767px) {
+  .edit-product__container__row__col1 {
+    display: none;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col1 {
+    width: 17% !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col1 {
+    width: 18% !important;
+  }
+}
+.edit-product__container__row__col1__wrapper {
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  box-shadow: 1px 0px 20px 1px rgba(32, 32, 32, 0.0274509804);
+  padding: 1.6rem 0.6rem;
+  padding-top: 1rem !important;
+  padding-bottom: 0.2rem !important;
+  background: #fff;
+}
+.edit-product__container__row__col1__wrapper .hamburger {
+  font-weight: 500 !important;
+  padding: 0rem 0.7rem;
+}
+@media (max-width: 767px) {
+  .edit-product__container__row__col1__wrapper .hamburger {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .edit-product__container__row__col1__wrapper .hamburger {
+    padding: 0.2rem 0.7rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .edit-product__container__row__col1__wrapper .hamburger {
+    padding: 0.4rem 0.7rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col1__wrapper .hamburger {
+    padding: 0.6rem 0.7rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col1__wrapper .hamburger {
+    padding: 1rem 0.7rem !important;
+  }
+}
+.edit-product__container__row__col1__wrapper .hamburger .hamburger-icon {
+  font-size: 1rem;
+  cursor: pointer;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .edit-product__container__row__col1__wrapper .hamburger .hamburger-icon {
+    font-size: 1rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .edit-product__container__row__col1__wrapper .hamburger .hamburger-icon {
+    font-size: 1.1rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col1__wrapper .hamburger .hamburger-icon {
+    font-size: 1.15rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col1__wrapper .hamburger .hamburger-icon {
+    font-size: 1.2rem !important;
+  }
+}
+@media (max-width: 767px) {
+  .edit-product__container__row__col1__wrapper .links {
+    margin-top: 2.5rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col1__wrapper .links {
+    margin-top: 0.4rem;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col1__wrapper .links {
+    margin-top: 0.8rem;
+  }
+}
+.edit-product__container__row__col1__wrapper .links .link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.459);
+}
+.edit-product__container__row__col1__wrapper .links .link .setting {
+  display: none;
+}
+.edit-product__container__row__col1__wrapper .links .link h6 {
+  font-size: 0.6rem;
+  padding: 0rem 0.7rem;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col1__wrapper .links .link h6 {
+    font-size: 0.65rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col1__wrapper .links .link h6 {
+    font-size: 0.65rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .edit-product__container__row__col1__wrapper .links .link h6 {
+    font-size: 0.7rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .edit-product__container__row__col1__wrapper .links .link h6 {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col1__wrapper .links .link h6 {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col1__wrapper .links .link h6 {
+    font-size: 0.85rem !important;
+  }
+}
+.edit-product__container__row__col1__wrapper .links .link a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500 !important;
+  border-radius: 20px;
+  padding: 0.5rem 0.7rem;
+  background: none;
+}
+.edit-product__container__row__col1__wrapper .links .link a i {
+  margin-top: -0.1rem;
+  font-size: 0.8rem;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col1__wrapper .links .link a i {
+    font-size: 0.85rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col1__wrapper .links .link a i {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .edit-product__container__row__col1__wrapper .links .link a i {
+    font-size: 0.95rem !important;
+    font-weight: 500;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .edit-product__container__row__col1__wrapper .links .link a i {
+    font-size: 1rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col1__wrapper .links .link a i {
+    font-size: 1.05rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col1__wrapper .links .link a i {
+    font-size: 1.1rem !important;
+  }
+}
+.edit-product__container__row__col1__wrapper .links .link a span {
+  font-size: 0.5rem;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col1__wrapper .links .link a span {
+    font-size: 0.58rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col1__wrapper .links .link a span {
+    font-size: 0.58rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .edit-product__container__row__col1__wrapper .links .link a span {
+    font-size: 0.6rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .edit-product__container__row__col1__wrapper .links .link a span {
+    font-size: 0.65rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col1__wrapper .links .link a span {
+    font-size: 0.7rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col1__wrapper .links .link a span {
+    font-size: 0.75rem !important;
+  }
+}
+.edit-product__container__row__col1__wrapper .links .link a span .label1 {
+  display: flex;
+}
+.edit-product__container__row__col1__wrapper .links .link a span .label2 {
+  display: none;
+}
+.edit-product__container__row__col1__wrapper .links .sign-out {
+  padding: 1.3rem 0.7rem;
+  border-bottom: none;
+}
+.edit-product__container__row__col1__wrapper .links .sign-out a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500 !important;
+  border-radius: 20px;
+  background: none;
+}
+.edit-product__container__row__col1__wrapper .links .sign-out a i {
+  margin-top: -0.1rem;
+  font-size: 0.8rem;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col1__wrapper .links .sign-out a i {
+    font-size: 0.85rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col1__wrapper .links .sign-out a i {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .edit-product__container__row__col1__wrapper .links .sign-out a i {
+    font-size: 0.95rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .edit-product__container__row__col1__wrapper .links .sign-out a i {
+    font-size: 1rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col1__wrapper .links .sign-out a i {
+    font-size: 1.05rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col1__wrapper .links .sign-out a i {
+    font-size: 1.1rem !important;
+  }
+}
+.edit-product__container__row__col1__wrapper .links .sign-out a span {
+  font-size: 0.5rem;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col1__wrapper .links .sign-out a span {
+    font-size: 0.58rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col1__wrapper .links .sign-out a span {
+    font-size: 0.58rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .edit-product__container__row__col1__wrapper .links .sign-out a span {
+    font-size: 0.6rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .edit-product__container__row__col1__wrapper .links .sign-out a span {
+    font-size: 0.65rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col1__wrapper .links .sign-out a span {
+    font-size: 0.7rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col1__wrapper .links .sign-out a span {
+    font-size: 0.75rem !important;
+  }
+}
+.edit-product__container__row__col1__wrapper .links .no-border {
+  border-bottom: none !important;
+}
+.edit-product__container__row__col2 {
+  height: 100%;
+  width: 78%;
+}
+@media (max-width: 767px) {
+  .edit-product__container__row__col2 {
+    width: 100% !important;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col2 {
+    width: 83% !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col2 {
+    width: 82% !important;
+  }
+}
+.edit-product__container__row__col2__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+}
+.edit-product__container__row__col2__wrapper__top-bar {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  padding: 0.9rem 1.5rem;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col2__wrapper__top-bar {
+    gap: 0.9rem;
+    padding: 0.7rem 1rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__top-bar {
+    gap: 1.3rem;
+    padding: 0.9rem 1.2rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col2__wrapper__top-bar {
+    padding: 1.1rem 1.5rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col2__wrapper__top-bar {
+    padding: 1.2rem 1.5rem !important;
+  }
+}
+.edit-product__container__row__col2__wrapper__top-bar .hamburger {
+  display: none;
+  font-weight: 500 !important;
+  padding: 0rem 0.7rem;
+  position: relative;
+  z-index: 60;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col2__wrapper__top-bar .hamburger {
+    padding: 0 0.3rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__top-bar .hamburger {
+    padding: 0 0.5rem;
+  }
+}
+@media (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__top-bar .hamburger {
+    display: flex !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .edit-product__container__row__col2__wrapper__top-bar .hamburger {
+    padding: 0.2rem 0.7rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .edit-product__container__row__col2__wrapper__top-bar .hamburger {
+    padding: 0.4rem 0.7rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col2__wrapper__top-bar .hamburger {
+    padding: 0.6rem 0.7rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col2__wrapper__top-bar .hamburger {
+    padding: 1rem 0.7rem !important;
+  }
+}
+.edit-product__container__row__col2__wrapper__top-bar .hamburger .hamburger-icon {
+  font-size: 1rem;
+  cursor: pointer;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col2__wrapper__top-bar .hamburger .hamburger-icon {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__top-bar .hamburger .hamburger-icon {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .edit-product__container__row__col2__wrapper__top-bar .hamburger .hamburger-icon {
+    font-size: 1rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .edit-product__container__row__col2__wrapper__top-bar .hamburger .hamburger-icon {
+    font-size: 1.1rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col2__wrapper__top-bar .hamburger .hamburger-icon {
+    font-size: 1.15rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col2__wrapper__top-bar .hamburger .hamburger-icon {
+    font-size: 1.2rem !important;
+  }
+}
+.edit-product__container__row__col2__wrapper__main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  padding-right: 0;
+  height: 100%;
+  width: 100%;
+}
+.edit-product__container__row__col2__wrapper__main .btns-wrapper .button1 button {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.75rem;
+  padding-left: 1.1rem !important;
+  border-radius: 20px !important;
+  background-color: #005BC1;
+  color: #fff;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col2__wrapper__main .btns-wrapper .button1 button {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__main .btns-wrapper .button1 button {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .edit-product__container__row__col2__wrapper__main .btns-wrapper .button1 button {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .edit-product__container__row__col2__wrapper__main .btns-wrapper .button1 button {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col2__wrapper__main .btns-wrapper .button1 button {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col2__wrapper__main .btns-wrapper .button1 button {
+    font-size: 0.95rem !important;
+  }
+}
+.edit-product__container__row__col2__wrapper__main .btns-wrapper .button1 button i {
+  font-size: 0.8rem;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col2__wrapper__main .btns-wrapper .button1 button i {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__main .btns-wrapper .button1 button i {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .edit-product__container__row__col2__wrapper__main .btns-wrapper .button1 button i {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .edit-product__container__row__col2__wrapper__main .btns-wrapper .button1 button i {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col2__wrapper__main .btns-wrapper .button1 button i {
+    font-size: 1rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col2__wrapper__main .btns-wrapper .button1 button i {
+    font-size: 1.06rem !important;
+  }
+}
+.edit-product__container__row__col2__wrapper__main .table {
+  padding: 0 !important;
+  width: 100%;
+  height: 400px;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  max-width: 95% !important; /* adjust to your desired maximum width */
+  overflow-x: auto;
+  white-space: nowrap;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col2__wrapper__main .table {
+    height: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__main .table {
+    height: 100%;
+  }
+}
+.edit-product__container__row__col2__wrapper__main .table table {
+  table-layout: auto;
+  width: 100%;
+}
+.edit-product__container__row__col2__wrapper__main .table table tr td {
+  padding: 0.5rem 0.5rem !important;
+  font-size: 0.65rem;
+  font-weight: 500;
+  text-align: start;
+  margin: 2rem 0;
+  border: 1px solid 202020 !important;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col2__wrapper__main .table table tr td {
+    font-size: 0.65rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__main .table table tr td {
+    font-size: 0.65rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .edit-product__container__row__col2__wrapper__main .table table tr td {
+    font-size: 0.7rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .edit-product__container__row__col2__wrapper__main .table table tr td {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col2__wrapper__main .table table tr td {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col2__wrapper__main .table table tr td {
+    font-size: 0.85rem !important;
+  }
+}
+.edit-product__container__row__col2__wrapper__main .table table tr td i {
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col2__wrapper__main .table table tr td i {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__main .table table tr td i {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .edit-product__container__row__col2__wrapper__main .table table tr td i {
+    font-size: 1rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .edit-product__container__row__col2__wrapper__main .table table tr td i {
+    font-size: 1rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col2__wrapper__main .table table tr td i {
+    font-size: 1.05rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col2__wrapper__main .table table tr td i {
+    font-size: 1.1rem !important;
+  }
+}
+.edit-product__container__row__col2__wrapper__main .table table tr.heading {
+  background: none;
+}
+.edit-product__container__row__col2__wrapper__main .table table th {
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-align: start;
+  border: none !important;
+  padding: 0.5rem 0.5rem !important;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col2__wrapper__main .table table th {
+    font-size: 0.6rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__main .table table th {
+    font-size: 0.6rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .edit-product__container__row__col2__wrapper__main .table table th {
+    font-size: 0.7rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .edit-product__container__row__col2__wrapper__main .table table th {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col2__wrapper__main .table table th {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col2__wrapper__main .table table th {
+    font-size: 0.85rem !important;
+  }
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-title {
+  font-size: 1rem;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-title {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-title {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-title {
+    font-size: 1rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-title {
+    font-size: 1.05rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-title {
+    font-size: 1.2rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-title {
+    font-size: 1.3rem !important;
+  }
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper {
+  padding: 1.5rem 0rem !important;
+  padding-right: 1rem !important;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper {
+    padding: 1rem 0rem !important;
+    padding-right: 1rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper {
+    padding: 1rem 0rem !important;
+    padding-right: 1rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main {
+  width: 100%;
+  display: flex;
+  flex-direction: row !important;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+@media (max-width: 991px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 1rem;
+  }
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .line {
+    display: none !important;
+  }
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+  width: 47%;
+}
+@media (max-width: 991px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left {
+    width: 47%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left {
+    width: 47%;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left {
+    width: 47%;
+  }
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left fieldset {
+  border-radius: 0.3rem;
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left fieldset legend {
+  font-size: 0.75rem;
+  margin-bottom: 0 !important;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left fieldset legend {
+    font-size: 0.7rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left fieldset legend {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left fieldset legend {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left fieldset legend {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left fieldset legend {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left fieldset legend {
+    font-size: 0.9rem !important;
+  }
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left fieldset input {
+  width: 100%;
+  padding: 0.55rem 1rem;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 0.8rem;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left fieldset input {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left fieldset input {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left fieldset input {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left fieldset input {
+    padding: 0.55rem 0.7rem !important;
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left fieldset input {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left fieldset input {
+    font-size: 0.95rem !important;
+  }
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left fieldset select {
+  width: 100%;
+  padding: 0.55rem 1rem;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 0.8rem;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left fieldset select {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left fieldset select {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left fieldset select {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left fieldset select {
+    padding: 0.55rem 0.7rem !important;
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left fieldset select {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left fieldset select {
+    font-size: 0.95rem !important;
+  }
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left .first {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  width: 100%;
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left .first .select-box {
+  width: 30%;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left .first .select-box {
+    width: 40%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left .first .select-box {
+    width: 35%;
+  }
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left .second {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left .third {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left .fourth {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left .fourth fieldset {
+  width: 100%;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left .fourth fieldset legend {
+    font-size: 0.65rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left .fourth fieldset legend {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left .fourth fieldset legend {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left .fourth fieldset legend {
+    font-size: 0.73rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left .fourth fieldset legend {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left .fourth fieldset legend {
+    font-size: 0.85rem !important;
+  }
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left .fourth fieldset textarea {
+  width: 100%;
+  padding: 0.55rem 1rem !important;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 0.8rem;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left .fourth fieldset textarea {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left .fourth fieldset textarea {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left .fourth fieldset textarea {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left .fourth fieldset textarea {
+    padding: 0.55rem 0.7rem !important;
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left .fourth fieldset textarea {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .left .fourth fieldset textarea {
+    font-size: 0.95rem !important;
+  }
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .line {
+  height: 21rem;
+  width: 1px;
+  background-color: rgba(34, 34, 34, 0.5137254902);
+  margin: 0 1.5rem;
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .line {
+    height: 21.7rem;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .line {
+    height: 22.7rem;
+  }
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+  width: 47%;
+}
+@media (max-width: 991px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right {
+    width: 47%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right {
+    width: 47%;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right {
+    width: 47%;
+  }
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right fieldset {
+  border-radius: 0.3rem;
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right fieldset legend {
+  font-size: 0.75rem;
+  margin-bottom: 0 !important;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right fieldset legend {
+    font-size: 0.7rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right fieldset legend {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right fieldset legend {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right fieldset legend {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right fieldset legend {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right fieldset legend {
+    font-size: 0.9rem !important;
+  }
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right fieldset input {
+  width: 100%;
+  padding: 0.55rem 1rem;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 0.8rem;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right fieldset input {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right fieldset input {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right fieldset input {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right fieldset input {
+    padding: 0.55rem 0.7rem !important;
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right fieldset input {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right fieldset input {
+    font-size: 0.95rem !important;
+  }
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right fieldset select {
+  width: 100%;
+  padding: 0.55rem 1rem;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 0.8rem;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right fieldset select {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right fieldset select {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right fieldset select {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right fieldset select {
+    padding: 0.55rem 0.7rem !important;
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right fieldset select {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right fieldset select {
+    font-size: 0.95rem !important;
+  }
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .first {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  width: 100%;
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .second {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.9rem;
+  width: 100%;
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .second .check {
+  width: 25%;
+  margin-bottom: 0.8rem !important;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .second .check {
+    width: 85%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .second .check {
+    width: 40%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .second .check {
+    width: 55% !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .second .check {
+    width: 70% !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .second .check {
+    width: 23% !important;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .second .check {
+    width: 21% !important;
+  }
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .second span {
+  font-size: 0.8rem;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .second span {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .second span {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .second span {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .second span {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .second span {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .second span {
+    font-size: 0.95rem !important;
+  }
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .third {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .third .date-label {
+  position: relative;
+}
+@media (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .third .date-label::before {
+    position: absolute;
+    color: #292929;
+    content: "";
+    top: 42%;
+    right: 0.6rem !important;
+    transform: translate(-50%, -50%);
+    background: url(../images/calendar.svg) !important;
+    background-repeat: no-repeat !important;
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+}
+@media (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .third input[type=date]::before {
+    color: #292929;
+  }
+}
+@media (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .third input[type=date]:focus {
+    content: "";
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+}
+@media (max-width: 3000px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .third input[type=date]:focus {
+    box-shadow: none !important;
+  }
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .third {
+    flex-wrap: wrap;
+  }
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .third fieldset {
+    width: 47% !important;
+  }
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .third fieldset {
+  width: 32%;
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .fourth {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .fourth {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .fourth fieldset {
+    width: 45%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .fourth fieldset {
+    width: 45%;
+  }
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .fourth .select-box {
+  width: 50%;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .fourth .select-box {
+    width: 45%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .fourth .select-box {
+    width: 45%;
+  }
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .fourth .field1 {
+  width: 60%;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .fourth .field1 {
+    width: 45%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .fourth .field1 {
+    width: 45%;
+  }
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .fifth {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .main .right .fifth fieldset {
+  width: 100%;
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper {
+  margin-top: 3rem;
+  width: 100%;
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper button {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.7rem;
+  border-radius: 20px !important;
+  background-color: #005BC1;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper button {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper button {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper button {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper button {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper button {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper button {
+    font-size: 0.95rem !important;
+  }
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .btn2 {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.75rem;
+  padding: 1rem 0 !important;
+  background: none;
+  color: #00438e;
+  border: none;
+  outline: none;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .btn2 {
+    font-size: 0.7rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .btn2 {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .btn2 {
+    font-size: 0.85rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .btn2 {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .btn2 {
+    font-size: 0.95rem !important;
+  }
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .btn2:hover {
+  background-color: inherit !important;
+  color: #003775 !important;
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .table {
+  margin-top: 2rem;
+  padding: 0 !important;
+  width: 100%;
+  height: 150px;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  max-width: 100% !important; /* adjust to your desired maximum width */
+  overflow-x: auto;
+  white-space: nowrap;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .table {
+    height: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .table {
+    height: 100%;
+  }
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .table table {
+  table-layout: auto;
+  width: 100%;
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .table table tr td {
+  padding: 0.5rem 0.5rem !important;
+  font-size: 0.65rem;
+  font-weight: 500;
+  text-align: start;
+  margin: 2rem 0;
+  border: 1px solid 202020 !important;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .table table tr td {
+    font-size: 0.65rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .table table tr td {
+    font-size: 0.7rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .table table tr td {
+    font-size: 0.7rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .table table tr td {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .table table tr td {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .table table tr td {
+    font-size: 0.85rem !important;
+  }
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .table table tr td select {
+  outline: none !important;
+  border: none !important;
+  background: none !important;
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .table table tr td i {
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .table table tr td i {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .table table tr td i {
+    font-size: 1rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .table table tr td i {
+    font-size: 1rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .table table tr td i {
+    font-size: 1rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .table table tr td i {
+    font-size: 1.05rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .table table tr td i {
+    font-size: 1.1rem !important;
+  }
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .table table tr.heading {
+  background: none;
+}
+.edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .table table th {
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-align: start;
+  border: none !important;
+  padding: 0.5rem 0.5rem !important;
+}
+@media (max-width: 575px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .table table th {
+    font-size: 0.65rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .table table th {
+    font-size: 0.7rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .table table th {
+    font-size: 0.7rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .table table th {
+    font-size: 0.75rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .table table th {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .edit-product__container__row__col2__wrapper__main .order-modal-body .modal-edit-wrapper .form .second-wrapper .table table th {
+    font-size: 0.85rem !important;
+  }
+}
+
 .first-modal-title {
   font-size: 1rem !important;
 }
